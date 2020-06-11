@@ -7,8 +7,12 @@ import Map from "./Components/Map";
 
 function App() {
     return (
-        <div>
+        <div style={{ height: "100%" }}>
             <Navbar />
+            <MainContainer>
+                <SiderBar />
+                <Map />
+            </MainContainer>
         </div>
     );
 }

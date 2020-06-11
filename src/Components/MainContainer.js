@@ -2,11 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-    background: red;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 93vh;
+    background: white;
 `;
 
-const MainContainer = () => {
-    return <Container />;
+const MainContainer = (props) => {
+    return <Container>{props.children}</Container>;
 };
 export default MainContainer;

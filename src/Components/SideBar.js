@@ -3,11 +3,14 @@ import styled from "styled-components";
 
 const Container = styled.div`
     width: 35%;
-    border-right: 1px solid black;
+    border-right: 2px solid black;
+    height: 100%;
+    background: white;
+    margin-left: 1.2rem;
 `;
 
 const SideBar = () => {
-    return <Container />;
+    return <Container>SideBar</Container>;
 };
 
 export default SideBar;

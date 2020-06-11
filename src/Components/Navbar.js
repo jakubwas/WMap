@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const NavigationBar = styled.nav`
-    background: #071e3d;
-    min-height: 7vh;
+    background: #001f3f;
+    height: 7vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
