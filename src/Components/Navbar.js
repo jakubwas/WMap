@@ -7,6 +7,9 @@ const NavigationBar = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-top: 1rem solid black;
+    border-left: 1rem solid black;
+    border-right: 1rem solid black;
 `;
 
 const AppTitle = styled.h1`

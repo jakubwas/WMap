@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar";
-import MainContainer from "./Components/MainContainer";
-import SiderBar from "./Components/SideBar";
+import MainContainer from "./Components/Containers/MainContainer";
+import SiderBarContainer from "./Components/Containers/SideBarContainer";
 import Map from "./Components/Map";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
         <div style={{ height: "100%" }}>
             <Navbar />
             <MainContainer>
-                <SiderBar />
+                <SiderBarContainer />
                 <Map />
             </MainContainer>
         </div>

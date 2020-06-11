@@ -29,4 +29,5 @@ path:hover {
 
 path {
     stroke: grey;
+    fill: #222222;
 }

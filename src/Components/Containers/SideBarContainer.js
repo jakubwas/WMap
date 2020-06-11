@@ -3,14 +3,12 @@ import styled from "styled-components";
 
 const Container = styled.div`
     width: 35%;
-    border-right: 2px solid black;
     height: 100%;
-    background: white;
-    margin-left: 1.2rem;
+    border-right: 1rem solid black;
 `;
 
-const SideBar = () => {
+const SideBarContainer = () => {
     return <Container>SideBar</Container>;
 };
 
-export default SideBar;
+export default SideBarContainer;

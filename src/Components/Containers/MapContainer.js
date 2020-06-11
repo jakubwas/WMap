@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
+    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 93vh;
-    background: white;
+    flex-direction: column;
+    background: rgb(0, 15, 26);
 `;
 
-const MainContainer = (props) => {
+const SideBarContainer = (props) => {
     return <Container>{props.children}</Container>;
 };
-export default MainContainer;
+
+export default SideBarContainer;
