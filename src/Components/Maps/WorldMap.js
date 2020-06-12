@@ -1,6 +1,6 @@
 import React from "react";
 
-const WordMapSVG = () => {
+const WorldMap = () => {
     return (
         <svg strokeWidth=".6" viewBox="0 0 2000 868" width="1400">
             <path
@@ -1092,4 +1092,4 @@ const WordMapSVG = () => {
     );
 };
 
-export default WordMapSVG;
+export default WorldMap;

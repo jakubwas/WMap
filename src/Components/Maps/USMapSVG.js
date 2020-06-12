@@ -1,6 +1,7 @@
 import React from "react";
 
 const USMapSVG = () => {
+
     return (
         <svg
             enable_background="new 0 0 1000 589"

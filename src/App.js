@@ -2,8 +2,6 @@ import React from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import MainContainer from "./Components/MainContainer";
-import MapConainer from "./Components/Maps/MapContainer";
-import SiderBarContainer from "./Components/SideBarContainer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import USMap from "./Components/Maps/USMap";

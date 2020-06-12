@@ -1,8 +1,7 @@
-import React, { Fragment } from "react";
-import styled, { withTheme } from "styled-components";
+import React from "react";
+import styled from "styled-components";
 import { Link } from "react-router-dom";
-import USMap from "./Maps/USMap";
-import WordMapSVG from "./Maps/WordMapSVG";
+import WorldMap from "./Maps/WorldMap";
 
 const MenuContainer = styled.div`
     display: flex;
@@ -14,20 +13,22 @@ const MenuContainer = styled.div`
 const MenuList = styled.div`
     display: flex;
     flex-direction: column;
-    margin-right: 3rem;
+    margin: 0 3rem;
+    width: 30rem;
 `;
 
 const listStyle = {
     textDecoration: "none",
     color: "#001f3f",
-    fontSize: "3rem",
-    fontWeight: "600",
+    fontSize: "2rem",
+    fontWeight: "500",
     margin: "0.5rem",
     padding: "1rem 3rem",
     border: "2px solid black",
     borderRadius: "10px",
     textAlign: "center",
     background: "white",
+    minWidth: "15rem",
 };
 
 const SelectMode = styled.h1`
@@ -42,14 +43,26 @@ const SelectMode = styled.h1`
 const Menu = () => {
     return (
         <MenuContainer>
-            <WordMapSVG />
+            <WorldMap />
             <MenuList>
                 <SelectMode>Select mode</SelectMode>
-                <Link to="/" style={listStyle}>
-                    Countries
+                <Link to="/USA" style={listStyle}>
+                    US states
                 </Link>
                 <Link to="/" style={listStyle}>
-                    US states
+                    North America
+                </Link>
+                <Link to="/" style={listStyle}>
+                    South America
+                </Link>
+                <Link to="/" style={listStyle}>
+                    Europe
+                </Link>
+                <Link to="/" style={listStyle}>
+                    Africa
+                </Link>
+                <Link to="/" style={listStyle}>
+                    Asia
                 </Link>
             </MenuList>
         </MenuContainer>
