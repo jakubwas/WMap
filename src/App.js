@@ -1,17 +1,19 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar";
-import MainContainer from "./Components/Containers/MainContainer";
-import SiderBarContainer from "./Components/Containers/SideBarContainer";
-import Map from "./Components/Map";
+import MainContainer from "./Components/MainContainer";
+import MapConainer from "./Components/Maps/MapContainer";
+import SiderBarContainer from "./Components/SideBarContainer";
+import USMap from "./Components/Maps/USMap";
 
 function App() {
     return (
         <div style={{ height: "100%" }}>
             <Navbar />
             <MainContainer>
-                <SiderBarContainer />
-                <Map />
+                <MapConainer>
+                    <USMap />
+                </MapConainer>
             </MainContainer>
         </div>
     );

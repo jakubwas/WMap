@@ -19,10 +19,32 @@ const AppTitle = styled.h1`
     font-family: "Montserrat", sans-serif;
 `;
 
+const Burger = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 100%;
+    margin-right: 1.2rem;
+    cursor: pointer;
+`;
+
+const Line = styled.div`
+    width: 100%;
+    height: 0.3rem;
+    margin: 0.4rem 0;
+    background: white;
+`;
+
 const Navbar = () => {
     return (
         <NavigationBar>
-            <AppTitle>WEnergy</AppTitle>
+            <AppTitle>WMap</AppTitle>
+            <Burger>
+                <Line />
+                <Line />
+            </Burger>
         </NavigationBar>
     );
 };

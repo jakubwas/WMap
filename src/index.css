@@ -24,10 +24,10 @@ html {
 }
 
 path:hover {
-    fill: #ffd717;
+    fill: rgb(36, 49, 163);
 }
 
 path {
-    stroke: grey;
-    fill: #222222;
+    stroke: white;
+    fill: rgb(36, 49, 235);
 }
