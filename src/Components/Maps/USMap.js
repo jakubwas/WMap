@@ -1,6 +1,7 @@
-import React from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import USMapSVG from "./USMapSVG";
-import Score from "../Score";
+import styled from "styled-components";
+import SideBarContainer from "../SideBarContainer";
 
 const USMap = () => {
     const USStates = [
@@ -54,27 +55,29 @@ const USMap = () => {
         "Pennsylvania",
         "Maine",
         "Michigan",
-        "Alaska",
     ];
 
-    const generatedNumbers = [];
-    let x;
 
-    const generateQuiz = () => {
+    const generatedStates = [];
+
+    const generateStates = () => {
+        let uSState;
         for (let i = 0; i < 10; i++) {
-            x = USStates[Math.floor(Math.random() * USStates.length)];
-            if (!generatedNumbers.includes(x)) {
-                generatedNumbers.push(x);
+            uSState = USStates[Math.floor(Math.random() * USStates.length)];
+            if (!generatedStates.includes(uSState)) {
+                generatedStates.push(uSState);
             } else {
                 i--;
             }
         }
+        console.log(generatedStates)
     };
 
     return (
-        <div>
+        <Fragment>
+            <SideBarContainer generateStates={generateStates}/>
             <USMapSVG />
-        </div>
+        </Fragment>
     );
 };
 
