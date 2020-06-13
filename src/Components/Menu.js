@@ -5,47 +5,51 @@ import WorldMap from "./Maps/WorldMap";
 
 const MenuContainer = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
+    height: 100%;
     background: white;
 `;
 
 const MenuList = styled.div`
     display: flex;
-    flex-direction: column;
-    margin: 0 3rem;
-    width: 30rem;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin: 2rem 0;
+    flex-wrap: wrap;
 `;
 
 const listStyle = {
     textDecoration: "none",
     color: "#001f3f",
-    fontSize: "2rem",
+    fontSize: "1.5rem",
     fontWeight: "500",
     margin: "0.5rem",
-    padding: "1rem 3rem",
+    padding: "1rem 2rem",
     border: "2px solid black",
     borderRadius: "10px",
     textAlign: "center",
     background: "white",
-    minWidth: "15rem",
+    minWidth: "16rem",
 };
 
 const SelectMode = styled.h1`
-    font-size: 3.3rem;
+    font-size: 2rem;
     font-weight: 700;
     color: black;
     text-align: center;
     background: white;
-    margin-bottom: 2rem;
 `;
 
 const Menu = () => {
     return (
         <MenuContainer>
             <WorldMap />
+            <SelectMode>Select Mode</SelectMode>
             <MenuList>
-                <SelectMode>Select mode</SelectMode>
                 <Link to="/USA" style={listStyle}>
                     US states
                 </Link>
