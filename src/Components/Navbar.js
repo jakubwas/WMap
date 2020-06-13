@@ -4,6 +4,7 @@ import styled from "styled-components";
 const NavigationBar = styled.nav`
     background: #001f3f;
     height: 7vh;
+    min-height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;

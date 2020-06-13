@@ -2,7 +2,7 @@ body {
     margin: 0;
     min-height: 100vh;
     overflow-x: hidden;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: black;
@@ -29,4 +29,12 @@ path:hover {
 path {
     stroke: white;
     fill: rgb(36, 49, 235);
+}
+
+.wrong {
+    fill: red !important;
+}
+
+.correct {
+    fill: green;
 }
