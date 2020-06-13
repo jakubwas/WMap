@@ -1,8 +1,8 @@
 import React from "react";
 
-const USMapSVG = () => {
+const USMapSVG = (props) => {
     const onClickHandler = (e) => {
-        console.log(e.target.id);
+        props.setWhereClicked(e.target.id)
     };
 
     return (
