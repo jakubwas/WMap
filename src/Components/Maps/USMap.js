@@ -60,11 +60,13 @@ const USMap = () => {
     const [generatedStates, setGeneratedStates] = useState([]);
 
     useEffect(() => {
-        let uSState;
+        let state;
+        let stateArray = [];
         for (let i = 0; i < 10; i++) {
-            uSState = USStates[Math.floor(Math.random() * USStates.length)];
-            if (!generatedStates.includes(uSState)) {
-                setGeneratedStates((generatedStates) => [...generatedStates, uSState]);
+            state = USStates[Math.floor(Math.random() * USStates.length)];
+            if (!generatedStates.includes(state)) {
+                stateArray.push(state);
+                setGeneratedStates(stateArray);
             } else {
                 i--;
             }
@@ -72,23 +74,26 @@ const USMap = () => {
     }, []);
 
     const [whereClicked, setWhereClicked] = useState(null);
-    const [currentNumber, setCurrentNumber] = useState(0)
+    const [currentNumber, setCurrentNumber] = useState(0);
 
     const onClickHandler = (e) => {
         setWhereClicked(e.target.id);
-        console.log(generatedStates);
     };
 
     return (
         <Fragment>
-            <SideBarContainer youClicked={whereClicked} find={generatedStates[currentNumber]}/>
+            <SideBarContainer
+                youClicked={whereClicked}
+                find={generatedStates[currentNumber]}
+                currentNumber={currentNumber}
+            />
             <svg
                 enable_background="new 0 0 1000 589"
                 height="589px"
                 pretty_print="False"
                 version="1.1"
                 viewBox="0 0 1000 589"
-                width="1000px"
+                width="100%"
                 onClick={onClickHandler}
             >
                 <path
