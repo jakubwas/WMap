@@ -36,5 +36,8 @@ path {
 }
 
 .correct {
-    fill: green;
+    fill: rgb(16, 4, 68);
+}
+.correct:hover {
+    fill: rgb(16, 4, 68);
 }

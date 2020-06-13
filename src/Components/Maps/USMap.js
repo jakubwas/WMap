@@ -83,18 +83,21 @@ const USMap = () => {
     const onClickHandler = (e) => {
         if (e.target.id === "") return;
         const event = document.getElementById(e.target.id);
+        const correctAnswer = document.getElementById(generatedStates[currentNumber]);
         setWhereClicked(e.target.id);
         if (e.target.id != generatedStates[currentNumber]) {
             setWrongSelection(`Wrong, that's ${e.target.id} `);
             event.classList.add("wrong");
+            correctAnswer.classList.add("correct");
         } else {
-            setWrongSelection(`Correct, that's ${e.target.id} `);
+            event.classList.add("correct");
         }
         setTimeout(() => {
             event.classList.remove("wrong");
+            correctAnswer.classList.remove("correct");
             setWrongSelection("");
             setCurrentNumber(currentNumber + 1);
-        }, 1000);
+        }, 1400);
     };
 
     return (

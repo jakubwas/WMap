@@ -8,12 +8,12 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     color: red;
-    font-size: 3rem;
-    font-weight: 600
+    font-size: 2.2rem;
+    font-weight: 600;
 `;
 
 const WrongAnswer = (props) => {
-    return <Container >{props.children}</Container>;
+    return <Container>{props.children}</Container>;
 };
 
 export default WrongAnswer;
