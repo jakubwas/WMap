@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -43,21 +43,46 @@ const Score = styled.div`
     border-bottom: 1rem solid black;
 `;
 
+const Button = styled.button`
+    width: 70%;
+    padding: 1rem;
+    font-size: 2.2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+`;
+
 const SideBarContainer = (props) => {
+    const startGame = () => {
+        props.setCurrentNumber(1);
+        props.setDisplayDescription("none");
+    };
+
+    const playAgain = () => {
+        props.setPoints(0);
+        props.setCurrentNumber(1);
+    };
+
     return (
         <Container>
             <SideNote>Can you name the US States ?</SideNote>
             <FindContainer>
-                <h1 style={{ textAlign: "center", fontWeight: "400" }}>
-                    Find: <Find>{props.find}</Find>
-                </h1>
-                <h2>Round : {props.currentNumber + 1}/10</h2>
+                {props.currentNumber != 0 && props.currentNumber != 11 && (
+                    <Fragment>
+                        <h1 style={{ textAlign: "center", fontWeight: "400" }}>
+                            Find: <Find>{props.find}</Find>
+                        </h1>
+                        <h2>Round : {props.currentNumber}/10</h2>
+                    </Fragment>
+                )}
+                {props.currentNumber === 11 && <Button onClick={playAgain}>Play Again</Button>}
+                {props.currentNumber === 0 && <Button onClick={startGame}>Start</Button>}
             </FindContainer>
             <Score>
                 <h1>Score: </h1>
                 <h1 style={{ marginTop: "2rem" }}>
-                    <div style={{fontSize: 
-                    '3.5rem'}}>{props.points} </div>
+                    <div style={{ fontSize: "3.5rem" }}>{props.points} </div>
                 </h1>
             </Score>
         </Container>
