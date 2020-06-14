@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import WorldMap from "./Maps/WorldMap";
+import WorldMapSVG from "./Maps/WorldMapSVG";
 
 const MenuContainer = styled.div`
     display: flex;
@@ -47,7 +47,7 @@ const SelectMode = styled.h1`
 const Menu = () => {
     return (
         <MenuContainer>
-            <WorldMap />
+            <WorldMapSVG />
             <SelectMode>Select Mode</SelectMode>
             <MenuList>
                 <Link to="/USA" style={listStyle}>

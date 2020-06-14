@@ -77,7 +77,7 @@ const SideBarContainer = (props) => {
                     </Fragment>
                 )}
                 {props.currentNumber === 11 && <Button onClick={playAgain}>Play Again</Button>}
-                {props.currentNumber === 0 && <Button onClick={startGame}>Start</Button>}
+                {props.currentNumber === 0 && <Button onClick={startGame}>Start Quiz</Button>}
             </FindContainer>
             <Score>
                 <h1>Score: </h1>
