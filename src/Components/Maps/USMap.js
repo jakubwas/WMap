@@ -51,7 +51,6 @@ const USMap = () => {
         "Wisconsin",
         "West Virginia",
         "Delaware",
-        "District of Columbia",
         "Maryland",
         "New Jersey",
         "New York",
@@ -79,6 +78,7 @@ const USMap = () => {
 
     const [whereClicked, setWhereClicked] = useState(null);
     const [currentNumber, setCurrentNumber] = useState(0);
+    const [points, setPoints] = useState(0);
 
     const onClickHandler = (e) => {
         if (e.target.id === "") return;
@@ -91,6 +91,7 @@ const USMap = () => {
             correctAnswer.classList.add("correct");
         } else {
             event.classList.add("correct");
+            setPoints(points + 1);
         }
         setTimeout(() => {
             event.classList.remove("wrong");
@@ -106,6 +107,7 @@ const USMap = () => {
                 youClicked={whereClicked}
                 find={generatedStates[currentNumber]}
                 currentNumber={currentNumber}
+                points={points}
             />
             <MapContainer>
                 <WrongAnswer>{wrongSelection}</WrongAnswer>

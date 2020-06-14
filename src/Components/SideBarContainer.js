@@ -43,7 +43,6 @@ const Score = styled.div`
     border-bottom: 1rem solid black;
 `;
 
-
 const SideBarContainer = (props) => {
     return (
         <Container>
@@ -55,8 +54,11 @@ const SideBarContainer = (props) => {
                 <h2>Round : {props.currentNumber + 1}/10</h2>
             </FindContainer>
             <Score>
-                <h1>Points: </h1>
-                <h1 style={{ marginTop: "2rem" }}>0 </h1>
+                <h1>Score: </h1>
+                <h1 style={{ marginTop: "2rem" }}>
+                    <div style={{fontSize: 
+                    '3.5rem'}}>{props.points} </div>
+                </h1>
             </Score>
         </Container>
     );
