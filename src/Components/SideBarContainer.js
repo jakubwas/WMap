@@ -1,5 +1,6 @@
-import React, { Fragment } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import styled from "styled-components";
+import Timer from "./Timer";
 
 const Container = styled.div`
     width: 35rem;
@@ -54,7 +55,13 @@ const Button = styled.button`
 `;
 
 const SideBarContainer = (props) => {
+
+    const toggle = () => {
+        props.setIsActive(!props.isActive);
+    };
+
     const startGame = () => {
+        toggle();
         props.setCurrentNumber(1);
         props.setDisplayDescription("none");
     };
@@ -85,6 +92,14 @@ const SideBarContainer = (props) => {
                     <div style={{ fontSize: "3.5rem" }}>{props.points} </div>
                 </h1>
             </Score>
+            <Timer
+                isActive={props.isActive}
+                setIsActive={props.setIsActive}
+                currentNumber={props.currentNumber}
+                setCurrentNumber={props.setCurrentNumber}
+                resetTimer = {props.resetTimer}
+                setResetTimer = {props.setResetTimer}
+            />
         </Container>
     );
 };

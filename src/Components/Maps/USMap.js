@@ -6,6 +6,7 @@ import WrongAnswer from "./WrongAnswer";
 import "../../index.css";
 import loader from "../../assets/loader.gif";
 import USStates from "../../Data/USStates";
+import Timer from "../Timer";
 
 const USMap = () => {
     useEffect(() => {
@@ -29,6 +30,7 @@ const USMap = () => {
     const onClickHandler = (e) => {
         if (currentNumber != 0) {
             setDisplayDescription("none");
+            setIsActive(false);
             if (e.target.id === "") return;
             const event = document.getElementById(e.target.id);
             const correctAnswer = document.getElementById(generatedStates[currentNumber]);
@@ -46,10 +48,13 @@ const USMap = () => {
                 correctAnswer.classList.remove("correct");
                 setWrongSelection("");
                 setCurrentNumber(currentNumber + 1);
+                setIsActive(true);
+                setResetTimer(true);
             }, 1400);
         }
     };
-
+    
+    const [isActive, setIsActive] = useState(false);
     const [generatedStates, setGeneratedStates] = useState([]);
     const [wrongSelection, setWrongSelection] = useState("");
     const [whereClicked, setWhereClicked] = useState(null);
@@ -57,6 +62,8 @@ const USMap = () => {
     const [points, setPoints] = useState(0);
     const [loading, setLoading] = useState(true);
     const [displayDescription, setDisplayDescription] = useState("inline-block");
+    const [resetTimer, setResetTimer] = useState(false);
+
 
     return (
         <Fragment>
@@ -68,6 +75,10 @@ const USMap = () => {
                 points={points}
                 setDisplayDescription={setDisplayDescription}
                 setPoints={setPoints}
+                isActive={isActive}
+                setIsActive={setIsActive}
+                resetTimer={resetTimer}
+                setResetTimer={setResetTimer}
             />
             <MapContainer>
                 {!loading && <WrongAnswer>{wrongSelection}</WrongAnswer>}
