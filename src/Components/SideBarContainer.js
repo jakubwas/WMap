@@ -23,7 +23,7 @@ const FindContainer = styled.div`
     justify-content: center;
     flex-direction: column;
     border-bottom: 1rem solid black;
-    min-height: 15rem;
+    min-height: 30%;
 `;
 
 const Find = styled.div`
@@ -40,7 +40,7 @@ const Score = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 20rem;
+    min-height: 20%;
     border-bottom: 1rem solid black;
 `;
 
