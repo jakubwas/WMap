@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import styled from "styled-components";
 import Timer from "./Timer";
 import PlayButton from "./Buttons/PlayButton";
-import USStates from "../Data/USStates";
 import generateQuiz from "./Maps/generateQuiz";
 
 const Container = styled.div`
@@ -53,7 +52,7 @@ const SideBarContainer = (props) => {
     };
 
     const startGame = () => {
-        generateQuiz(USStates, props.setGeneratedStates);
+        generateQuiz(props.countriesList, props.setGeneratedStates);
 
         toggle();
         props.setPoints(0);
@@ -62,14 +61,14 @@ const SideBarContainer = (props) => {
     };
 
     const playAgain = () => {
-        generateQuiz(USStates, props.setGeneratedStates);
+        generateQuiz(props.countriesList, props.setGeneratedStates);
         props.setPoints(0);
         props.setCurrentNumber(1);
     };
 
     return (
         <Container>
-            <SideNote>Can you name the US States ?</SideNote>
+            <SideNote>{props.sideNoteMessage}</SideNote>
             <FindContainer>
                 {props.currentNumber !== 0 && props.currentNumber !== 11 && (
                     <Fragment>

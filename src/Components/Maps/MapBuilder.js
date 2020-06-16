@@ -14,7 +14,8 @@ const MapBuilder = (props) => {
     }, []);
 
     const onClickHandler = (e) => {
-        if (currentNumber !== 0) {
+        console.log(e.target)
+        if (currentNumber !== 0 && currentNumber !== 11 && isActive === true && e.target.id ) {
             setDisplayDescription("none");
             setIsActive(false);
             if (e.target.id === "") return;
@@ -65,6 +66,8 @@ const MapBuilder = (props) => {
                 resetTimer={resetTimer}
                 setResetTimer={setResetTimer}
                 setGeneratedStates={setGeneratedStates}
+                countriesList={props.countriesList}
+                sideNoteMessage={props.sideNoteMessage}
             />
             <MapContainer>
                 {!loading && <WrongAnswer>{wrongSelection}</WrongAnswer>}
