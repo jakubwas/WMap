@@ -1,11 +1,12 @@
 import React, { useState, useEffect, Fragment } from "react";
 import styled from "styled-components";
 import Timer from "./Timer";
+import PlayButton from "./Buttons/PlayButton";
 
 const Container = styled.div`
     width: 35rem;
     height: 100%;
-    border-right: 1rem solid black;
+    border-right: 0.8rem solid black;
 `;
 
 const SideNote = styled.h2`
@@ -14,7 +15,7 @@ const SideNote = styled.h2`
     font-size: 2rem;
     text-align: center;
     padding-bottom: 3rem;
-    border-bottom: 1rem solid black;
+    border-bottom: 0.8rem solid black;
 `;
 
 const FindContainer = styled.div`
@@ -22,7 +23,7 @@ const FindContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-bottom: 1rem solid black;
+    border-bottom: 0.8rem solid black;
     min-height: 30%;
 `;
 
@@ -31,7 +32,7 @@ const Find = styled.div`
     color: rgb(36, 49, 235);
     text-align: center;
     margin-top: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     font-weight: 600;
 `;
 
@@ -41,7 +42,7 @@ const Score = styled.div`
     align-items: center;
     justify-content: center;
     min-height: 20%;
-    border-bottom: 1rem solid black;
+    border-bottom: 0.8rem solid black;
 `;
 
 const Button = styled.button`
@@ -55,12 +56,12 @@ const Button = styled.button`
 `;
 
 const SideBarContainer = (props) => {
-
     const toggle = () => {
         props.setIsActive(!props.isActive);
     };
 
     const startGame = () => {
+        console.log('start')
         toggle();
         props.setCurrentNumber(1);
         props.setDisplayDescription("none");
@@ -83,8 +84,16 @@ const SideBarContainer = (props) => {
                         <h2>Round : {props.currentNumber}/10</h2>
                     </Fragment>
                 )}
-                {props.currentNumber === 11 && <Button onClick={playAgain}>Play Again</Button>}
-                {props.currentNumber === 0 && <Button onClick={startGame}>Start Quiz</Button>}
+                {props.currentNumber === 11 && (
+                    <PlayButton backText="Start" onClick={playAgain}>
+                        Play Again
+                    </PlayButton>
+                )}
+                {props.currentNumber === 0 && (
+                    <PlayButton backText="Play" onClick={startGame}>
+                        Start Quiz
+                    </PlayButton>
+                )}
             </FindContainer>
             <Score>
                 <h1>Score: </h1>
@@ -97,8 +106,8 @@ const SideBarContainer = (props) => {
                 setIsActive={props.setIsActive}
                 currentNumber={props.currentNumber}
                 setCurrentNumber={props.setCurrentNumber}
-                resetTimer = {props.resetTimer}
-                setResetTimer = {props.setResetTimer}
+                resetTimer={props.resetTimer}
+                setResetTimer={props.setResetTimer}
             />
         </Container>
     );
