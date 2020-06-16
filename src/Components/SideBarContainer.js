@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
-import Timer from "./Timer";
 import PlayButton from "./Buttons/PlayButton";
 import generateQuiz from "./Maps/generateQuiz";
 
@@ -37,15 +36,6 @@ const Find = styled.div`
     font-weight: 600;
 `;
 
-const Score = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 20%;
-    border-bottom: 0.8rem solid black;
-`;
-
 const SideBarContainer = (props) => {
     const startGame = () => {
         generateQuiz(props.countriesList, props.setGeneratedStates);
@@ -67,12 +57,9 @@ const SideBarContainer = (props) => {
             <SideNote>{props.sideNoteMessage}</SideNote>
             <FindContainer>
                 {props.currentNumber !== 0 && props.currentNumber !== 11 && (
-                    <Fragment>
-                        <h1 style={{ textAlign: "center", fontWeight: "400" }}>
-                            Find: <Find>{props.find}</Find>
-                        </h1>
-                        <h2>Round : {props.currentNumber}/10</h2>
-                    </Fragment>
+                    <h1 style={{ textAlign: "center", fontWeight: "400" }}>
+                        Find: <Find>{props.find}</Find>
+                    </h1>
                 )}
                 {props.currentNumber === 11 && (
                     <PlayButton backText="Start" onClick={playAgain}>
@@ -85,19 +72,6 @@ const SideBarContainer = (props) => {
                     </PlayButton>
                 )}
             </FindContainer>
-            <Score>
-                <h1>Score: </h1>
-                <h1 style={{ marginTop: "2rem" }}>
-                    <div
-                        style={{
-                            fontSize: "3.5rem",
-                            color: `${props.currentNumber === 11 ? "blue" : "black"}`,
-                        }}
-                    >
-                        {props.points} {props.currentNumber === 11 ? "/ 10" : null}{" "}
-                    </div>
-                </h1>
-            </Score>
         </Container>
     );
 };

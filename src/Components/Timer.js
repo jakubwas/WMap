@@ -2,9 +2,6 @@ import React, { useState, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
 
 const ClockContainer = styled.div`
-    position: absolute;
-    top: 3%;
-    right: 3%;
     width: 7rem;
     display: flex;
     flex-direction: column;
@@ -23,16 +20,18 @@ const Svg = styled.svg`
 const countdown = keyframes`
 from {
     stroke-dashoffset: 0px;
+    stroke: black;
   }
   to {
-    stroke-dashoffset: 170px;
+    stroke-dashoffset: 220px;
+    stroke: red;
   }
 `;
 const Circle = styled.circle`
-    stroke-dasharray: 170px;
+    stroke-dasharray: 220px;
     stroke-dashoffset: 0px;
     stroke-linecap: round;
-    stroke-width: 3px;
+    stroke-width: 5px;
     stroke: #001f3f;
     fill: none;
     animation: ${countdown} 15s linear ${(props) => props.startStop};
@@ -59,7 +58,7 @@ const Timer = (props) => {
         let interval = null;
         if (props.currentNumber === 11) {
             setStartStop("paused");
-            setStartStop('initial')
+            setStartStop("initial");
             setSeconds("-");
         } else if (props.resetTimer) {
             setStartStop("initial");
@@ -79,11 +78,18 @@ const Timer = (props) => {
 
     return (
         <ClockContainer>
+            <h1
+                style={{
+                    color: "#001f3f",
+                }}
+            >
+                Time
+            </h1>
             <div style={{ position: "relative" }}>
                 <div
                     style={{
                         fontSize: "2rem",
-                        fontWeight: "400",
+                        fontWeight: "600",
                         color: "#001f3f",
                         position: "absolute",
                         top: "50%",
@@ -94,7 +100,7 @@ const Timer = (props) => {
                     {seconds}
                 </div>
                 <Svg>
-                    <Circle startStop={startStop} r="27" cx="50" cy="50"></Circle>
+                    <Circle startStop={startStop} r="35" cx="50" cy="50"></Circle>
                 </Svg>
             </div>
         </ClockContainer>

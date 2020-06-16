@@ -8,6 +8,7 @@ const EuropeMapSVG = (props) => {
             viewBox="0 0 837 542"
             fill="none"
             onClick={props.onClickHandler}
+            style={{ marginBottom: "2rem" }}
         >
             <path
                 id="Albania"

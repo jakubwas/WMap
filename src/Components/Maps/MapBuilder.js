@@ -5,7 +5,7 @@ import MapContainer from "./MapContainer";
 import WrongAnswer from "./WrongAnswer";
 import "../../index.css";
 import loader from "../../assets/loader.gif";
-import Timer from "../Timer";
+import RightSidebarContainer from "../../RightSidebarContainer";
 
 const MapBuilder = (props) => {
     useEffect(() => {
@@ -71,15 +71,17 @@ const MapBuilder = (props) => {
                 sideNoteMessage={props.sideNoteMessage}
             />
             <MapContainer>
+                {!loading && <WrongAnswer>{wrongSelection}</WrongAnswer>}
                 {!loading && (
-                    <Timer
-                        id="my-app"
+                    <RightSidebarContainer
                         isActive={isActive}
                         setIsActive={setIsActive}
                         currentNumber={currentNumber}
                         setCurrentNumber={setCurrentNumber}
                         resetTimer={resetTimer}
                         setResetTimer={setResetTimer}
+                        points={points}
+                        setPoints={setPoints}
                     />
                 )}
                 {loading && (
