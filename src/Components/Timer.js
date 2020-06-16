@@ -28,7 +28,7 @@ const Timer = (props) => {
         if (props.currentNumber === 11) {
             setSeconds("-");
         } else if (props.resetTimer) {
-            setSeconds(3);
+            setSeconds(15);
             props.setResetTimer(false);
         } else if (seconds === 0) {
             reset();
@@ -45,8 +45,10 @@ const Timer = (props) => {
             <h1 style={{ marginTop: "3rem" }}>Time: </h1>
             <div
                 style={{
-                    fontSize: "3rem",
+                    fontSize: "8rem",
+                    fontWeight: '700',
                     padding: "2rem",
+                    color: '#001f3f'
                 }}
             >
                 {seconds}

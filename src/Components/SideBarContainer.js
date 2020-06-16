@@ -2,6 +2,8 @@ import React, { Fragment } from "react";
 import styled from "styled-components";
 import Timer from "./Timer";
 import PlayButton from "./Buttons/PlayButton";
+import USStates from "../Data/USStates";
+import generateQuiz from "./Maps/generateQuiz";
 
 const Container = styled.div`
     width: 35rem;
@@ -51,12 +53,16 @@ const SideBarContainer = (props) => {
     };
 
     const startGame = () => {
+        generateQuiz(USStates, props.setGeneratedStates);
+
         toggle();
+        props.setPoints(0);
         props.setCurrentNumber(1);
         props.setDisplayDescription("none");
     };
 
     const playAgain = () => {
+        generateQuiz(USStates, props.setGeneratedStates);
         props.setPoints(0);
         props.setCurrentNumber(1);
     };
