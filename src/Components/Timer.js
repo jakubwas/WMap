@@ -10,19 +10,19 @@ const ClockContainer = styled.div`
 `;
 
 const Timer = (props) => {
-    const [seconds, setSeconds] = useState(3);
+    const [seconds, setSeconds] = useState("-");
     const reset = () => {
         props.setIsActive(false);
         setTimeout(() => {
-            setSeconds(3);
+            setSeconds(15);
             props.setIsActive(true);
             props.setCurrentNumber(props.currentNumber + 1);
         }, 1500);
     };
 
     useEffect(() => {
-        if (seconds === "-") {
-            setSeconds(3);
+        if (seconds === "-" && props.isActive) {
+            setSeconds(15);
         }
         let interval = null;
         if (props.currentNumber === 11) {
@@ -42,8 +42,15 @@ const Timer = (props) => {
 
     return (
         <ClockContainer>
-            <h1 style={{ marginTop: "2rem" }}>Time: </h1>
-            <div style={{ fontSize: "3rem", padding: "2rem" }}>{seconds}</div>
+            <h1 style={{ marginTop: "3rem" }}>Time: </h1>
+            <div
+                style={{
+                    fontSize: "3rem",
+                    padding: "2rem",
+                }}
+            >
+                {seconds}
+            </div>
         </ClockContainer>
     );
 };

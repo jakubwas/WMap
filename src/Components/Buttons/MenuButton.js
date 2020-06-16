@@ -8,9 +8,6 @@ const MainContainer = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
 `;
 
 const ButtonContainer = styled.div`
@@ -20,8 +17,9 @@ const ButtonContainer = styled.div`
     justify-content: center;
     text-align: center;
     background-color: #fff;
-    padding: 4rem 0rem;
-    width: 24rem;
+    width: 20rem;
+    padding-bottom: 1rem;
+    pointer-events: none;
 `;
 
 const Btn = styled.div`
@@ -29,7 +27,8 @@ const Btn = styled.div`
     cursor: pointer;
     font-size: 1.4rem;
     font-weight: 600;
-    line-height: 4.5rem;
+    line-height: 3.8rem;
+    border-radius: 10px;
     max-width: 16rem;
     position: relative;
     text-transform: uppercase;
@@ -38,10 +37,12 @@ const Btn = styled.div`
 
 const MenuButton = (props) => {
     return (
-        <MainContainer class="buttons">
-            <ButtonContainer class="container">
-                <Btn className="effect">
-                    <span>{props.children}</span>
+        <MainContainer>
+            <ButtonContainer>
+                <Btn className=" menu-btn-effect">
+                    <span style={{ width: "100%", height: "100%", display: "block" }}>
+                        {props.children}
+                    </span>
                 </Btn>
             </ButtonContainer>
         </MainContainer>

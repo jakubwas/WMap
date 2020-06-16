@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { Fragment } from "react";
 import styled from "styled-components";
 import Timer from "./Timer";
 import PlayButton from "./Buttons/PlayButton";
@@ -45,23 +45,12 @@ const Score = styled.div`
     border-bottom: 0.8rem solid black;
 `;
 
-const Button = styled.button`
-    width: 70%;
-    padding: 1rem;
-    font-size: 2.2rem;
-    border: 2px solid black;
-    border-radius: 10px;
-    background: white;
-    cursor: pointer;
-`;
-
 const SideBarContainer = (props) => {
     const toggle = () => {
         props.setIsActive(!props.isActive);
     };
 
     const startGame = () => {
-        console.log('start')
         toggle();
         props.setCurrentNumber(1);
         props.setDisplayDescription("none");
@@ -76,7 +65,7 @@ const SideBarContainer = (props) => {
         <Container>
             <SideNote>Can you name the US States ?</SideNote>
             <FindContainer>
-                {props.currentNumber != 0 && props.currentNumber != 11 && (
+                {props.currentNumber !== 0 && props.currentNumber !== 11 && (
                     <Fragment>
                         <h1 style={{ textAlign: "center", fontWeight: "400" }}>
                             Find: <Find>{props.find}</Find>
@@ -98,7 +87,14 @@ const SideBarContainer = (props) => {
             <Score>
                 <h1>Score: </h1>
                 <h1 style={{ marginTop: "2rem" }}>
-                    <div style={{ fontSize: "3.5rem" }}>{props.points} </div>
+                    <div
+                        style={{
+                            fontSize: "3.5rem",
+                            color: `${props.currentNumber === 11 ? "blue" : "black"}`,
+                        }}
+                    >
+                        {props.points} {props.currentNumber === 11 ? "/ 10" : null}{" "}
+                    </div>
                 </h1>
             </Score>
             <Timer

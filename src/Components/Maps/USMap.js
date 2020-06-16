@@ -6,7 +6,6 @@ import WrongAnswer from "./WrongAnswer";
 import "../../index.css";
 import loader from "../../assets/loader.gif";
 import USStates from "../../Data/USStates";
-import Timer from "../Timer";
 
 const USMap = () => {
     useEffect(() => {
@@ -28,14 +27,14 @@ const USMap = () => {
     }, []);
 
     const onClickHandler = (e) => {
-        if (currentNumber != 0) {
+        if (currentNumber !== 0) {
             setDisplayDescription("none");
             setIsActive(false);
             if (e.target.id === "") return;
             const event = document.getElementById(e.target.id);
             const correctAnswer = document.getElementById(generatedStates[currentNumber]);
             setWhereClicked(e.target.id);
-            if (e.target.id != generatedStates[currentNumber]) {
+            if (e.target.id !== generatedStates[currentNumber]) {
                 setWrongSelection(`Wrong, that's ${e.target.id} `);
                 event.classList.add("wrong");
                 correctAnswer.classList.add("correct");
