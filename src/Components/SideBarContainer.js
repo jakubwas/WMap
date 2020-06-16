@@ -47,14 +47,9 @@ const Score = styled.div`
 `;
 
 const SideBarContainer = (props) => {
-    const toggle = () => {
-        props.setIsActive(!props.isActive);
-    };
-
     const startGame = () => {
         generateQuiz(props.countriesList, props.setGeneratedStates);
-
-        toggle();
+        props.setIsActive(true);
         props.setPoints(0);
         props.setCurrentNumber(1);
         props.setDisplayDescription("none");
@@ -62,6 +57,7 @@ const SideBarContainer = (props) => {
 
     const playAgain = () => {
         generateQuiz(props.countriesList, props.setGeneratedStates);
+        props.setIsActive(true);
         props.setPoints(0);
         props.setCurrentNumber(1);
     };
@@ -102,14 +98,6 @@ const SideBarContainer = (props) => {
                     </div>
                 </h1>
             </Score>
-            <Timer
-                isActive={props.isActive}
-                setIsActive={props.setIsActive}
-                currentNumber={props.currentNumber}
-                setCurrentNumber={props.setCurrentNumber}
-                resetTimer={props.resetTimer}
-                setResetTimer={props.setResetTimer}
-            />
         </Container>
     );
 };

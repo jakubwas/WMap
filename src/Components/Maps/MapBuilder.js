@@ -5,6 +5,7 @@ import MapContainer from "./MapContainer";
 import WrongAnswer from "./WrongAnswer";
 import "../../index.css";
 import loader from "../../assets/loader.gif";
+import Timer from "../Timer";
 
 const MapBuilder = (props) => {
     useEffect(() => {
@@ -14,8 +15,7 @@ const MapBuilder = (props) => {
     }, []);
 
     const onClickHandler = (e) => {
-        console.log(e.target)
-        if (currentNumber !== 0 && currentNumber !== 11 && isActive === true && e.target.id ) {
+        if (currentNumber !== 0 && currentNumber !== 11 && isActive === true && e.target.id) {
             setDisplayDescription("none");
             setIsActive(false);
             if (e.target.id === "") return;
@@ -30,13 +30,14 @@ const MapBuilder = (props) => {
                 event.classList.add("correct");
                 setPoints(points + 1);
             }
+            setResetTimer(true);
+
             setTimeout(() => {
                 event.classList.remove("wrong");
                 correctAnswer.classList.remove("correct");
                 setWrongSelection("");
                 setCurrentNumber(currentNumber + 1);
                 setIsActive(true);
-                setResetTimer(true);
             }, 1400);
         }
     };
@@ -70,7 +71,17 @@ const MapBuilder = (props) => {
                 sideNoteMessage={props.sideNoteMessage}
             />
             <MapContainer>
-                {!loading && <WrongAnswer>{wrongSelection}</WrongAnswer>}
+                {!loading && (
+                    <Timer
+                        id="my-app"
+                        isActive={isActive}
+                        setIsActive={setIsActive}
+                        currentNumber={currentNumber}
+                        setCurrentNumber={setCurrentNumber}
+                        resetTimer={resetTimer}
+                        setResetTimer={setResetTimer}
+                    />
+                )}
                 {loading && (
                     <img
                         src={loader}
