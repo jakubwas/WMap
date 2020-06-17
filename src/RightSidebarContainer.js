@@ -11,7 +11,7 @@ const SidebarContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: white;
+    background: rgba(0,0,0,0)
 `;
 const Container = styled.div`
     display: flex;

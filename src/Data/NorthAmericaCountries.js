@@ -13,7 +13,6 @@ const NorthAmericaCountries = [
     "Panama",
     "El Salvador",
     "United States",
-    "Bahamas",
     "Puerto Rico",
 ];
 export default NorthAmericaCountries;
