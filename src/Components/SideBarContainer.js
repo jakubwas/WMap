@@ -31,6 +31,7 @@ const FindContainer = styled.div`
 
 const Find = styled.div`
     font-size: 3.4rem;
+    letter-spacing: 0.2rem;
     color: rgb(36, 49, 235);
     text-align: center;
     margin-top: 3rem;

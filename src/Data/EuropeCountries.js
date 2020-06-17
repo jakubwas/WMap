@@ -32,7 +32,6 @@ const EuropeCountries = [
     "Slovakia",
     "Slovenia",
     "Sweden",
-    "Turkey",
     "Ukraine",
     "Kosovo",
     "Netherlands",
@@ -41,3 +40,5 @@ const EuropeCountries = [
     "Cyprus",
 ];
 export default EuropeCountries;
+
+// Removed Turkey, Remember to add this later !!!
