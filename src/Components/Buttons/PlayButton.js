@@ -10,7 +10,7 @@ const MainContainer = styled.div`
     text-align: center;
     width: 100%;
     height: 100%;
-    margin: 0 auto;
+    margin: 0 auto;1
 `;
 
 const ButtonContainer = styled.div`
@@ -22,6 +22,7 @@ const ButtonContainer = styled.div`
     background-color: #fff;
     padding: 4rem 0rem;
     width: 24rem;
+    background: #001f3f;
 `;
 
 const Btn = styled.div`
@@ -34,6 +35,7 @@ const Btn = styled.div`
     position: relative;
     text-transform: uppercase;
     width: 100%;
+    background: white;
 `;
 
 const Button = (props) => {

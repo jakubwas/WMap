@@ -8,11 +8,12 @@ const Container = styled.div`
     width: 35rem;
     height: 100%;
     border-right: 0.8rem solid black;
+    background: #001f3f;
 `;
 
 const SideNote = styled.h2`
     margin-top: 3rem;
-    color: black;
+    color: white;
     font-size: 2rem;
     text-align: center;
     padding-bottom: 3rem;
@@ -25,6 +26,7 @@ const FindContainer = styled.div`
     justify-content: center;
     flex-direction: column;
     min-height: 30%;
+    background: #001f3f;
 `;
 
 const Find = styled.div`
@@ -57,7 +59,7 @@ const SideBarContainer = (props) => {
             <SideNote>{props.sideNoteMessage}</SideNote>
             <FindContainer>
                 {props.currentNumber !== 0 && props.currentNumber !== 11 && (
-                    <h1 style={{ textAlign: "center", fontWeight: "400" }}>
+                    <h1 style={{ textAlign: "center", fontWeight: "400", color: "white" }}>
                         Find: <Find>{props.find}</Find>
                     </h1>
                 )}

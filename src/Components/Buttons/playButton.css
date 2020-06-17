@@ -2,7 +2,7 @@
     display: inline-flex;
     color: #003163;
     border: solid 2px #003163;
-    border-radius: 1.4rem ;
+    border-radius: 1.4rem;
     position: relative;
     transition-duration: 0.4s;
     overflow: hidden;
@@ -16,7 +16,7 @@
 }
 
 .effect:hover {
-    background-color: #001f3f;
+    background-color: rgb(36, 49, 163);
 }
 
 .effect:hover span {
