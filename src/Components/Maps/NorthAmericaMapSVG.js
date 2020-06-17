@@ -2,7 +2,14 @@ import React from "react";
 
 const NorthAmericaMapSVG = (props) => {
     return (
-        <svg width="100%" viewBox="0 0 783 626" fill="none" onClick={props.onClickHandler}>
+        <svg
+            width="100%"
+            height="100%"
+            viewBox="0 0 783 626"
+            fill="none"
+            onClick={props.onClickHandler}
+            style={{ marginTop: "3rem" }}
+        >
             <g id="Group 1" filter="url(#filter0_d)">
                 <path
                     id="Belize"
