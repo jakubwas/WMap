@@ -8,6 +8,8 @@ import USMap from "./Components/Maps/USMap";
 import EuropeMap from "./Components/Maps/EuropeMap";
 import AfricaMap from "./Components/Maps/AfricaMap";
 import SouthAmericaMap from "./Components/Maps/SouthAmericaMap";
+import NorthAmericaMap from './Components/Maps/NorthAmericaMap'
+
 import Menu from "./Components/Menu";
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
                         <Route exact path="/Europe" component={EuropeMap} />
                         <Route exact path="/Africa" component={AfricaMap} />
                         <Route exact path="/SouthAmerica" component={SouthAmericaMap} />
+                        <Route exact path="/NorthAmerica" component={NorthAmericaMap} />
                         {/* And more... */}
                     </Switch>
                 </MainContainer>

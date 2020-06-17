@@ -44,7 +44,7 @@ const Menu = () => {
                     </Link>
                 </MenuButton>
                 <MenuButton>
-                    <Link to="/" className="link">
+                    <Link to="/NorthAmerica" className="link">
                         North America
                     </Link>
                 </MenuButton>
