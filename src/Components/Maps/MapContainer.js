@@ -9,11 +9,10 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
 `;
 
-const SideBarContainer = (props) => {
+const MapContainer = (props) => {
     return <Container>{props.children}</Container>;
 };
 
-export default SideBarContainer;
+export default MapContainer;

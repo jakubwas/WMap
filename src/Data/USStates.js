@@ -28,6 +28,7 @@ const USStates = [
     "Rhode Island",
     "Vermont",
     "Alabama",
+    "Alaska",
     "Florida",
     "Georgia",
     "Mississippi",

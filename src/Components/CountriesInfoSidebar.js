@@ -44,7 +44,7 @@ const RowContainer = styled.div`
 
 const CountriesInfoSidebar = (props) => {
     const displayArea = (area) => {
-        const kmsq = `km${String.fromCharCode(178)}`
+        const kmsq = `km${String.fromCharCode(178)}`;
         return `${area} ${kmsq}`;
     };
 
@@ -58,7 +58,7 @@ const CountriesInfoSidebar = (props) => {
             {props.currentNumber > 0 && props.currentNumber !== 11 ? (
                 <Container>
                     <img
-                        style={{ width: "20rem", height: "10rem", marginBottom: '3rem' }}
+                        style={{ width: "20rem", height: "10rem", marginBottom: "3rem" }}
                         src={require(`../assets/${props.svgFlagPath}/${
                             props.generatedStates[props.currentNumber]
                         }.svg`)}
@@ -84,16 +84,18 @@ const CountriesInfoSidebar = (props) => {
                                 )}
                             </CountryInfoData>
                         </RowContainer>
-                        <RowContainer>
-                            <CountryInfoTitle>Population: </CountryInfoTitle>
-                            <CountryInfoData>
-                                {displayPopulation(
-                                    props.countriesData[
-                                        props.generatedStates[props.currentNumber]
-                                    ].population
-                                )}
-                            </CountryInfoData>
-                        </RowContainer>
+                        {props.svgFlagPath !== "USFlags" && (
+                            <RowContainer>
+                                <CountryInfoTitle>Population: </CountryInfoTitle>
+                                <CountryInfoData>
+                                    {displayPopulation(
+                                        props.countriesData[
+                                            props.generatedStates[props.currentNumber]
+                                        ].population
+                                    )}
+                                </CountryInfoData>
+                            </RowContainer>
+                        )}
                     </CountryInfoContainer>
                 </Container>
             ) : null}
