@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
 import PlayButton from "./Buttons/PlayButton";
 import generateQuiz from "./Maps/generateQuiz";
@@ -76,6 +76,7 @@ const SideBarContainer = (props) => {
                 )}
             </FindContainer>
             <CountriesInfoSidebar
+                svgFlagPath={props.svgFlagPath}
                 generatedStates={props.generatedStates}
                 currentNumber={props.currentNumber}
                 countriesData={props.countriesData}

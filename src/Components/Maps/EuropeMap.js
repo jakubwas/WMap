@@ -12,6 +12,7 @@ const EuropeMap = () => {
                 countriesList={EuropeCountries}
                 countriesData={EuropeData}
                 sideNoteMessage={"Can you name all countries in Europe ?"}
+                svgFlagPath="EuropeFlags"
             />
         </Fragment>
     );

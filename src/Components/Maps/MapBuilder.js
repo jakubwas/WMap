@@ -71,6 +71,7 @@ const MapBuilder = (props) => {
                 countriesList={props.countriesList}
                 sideNoteMessage={props.sideNoteMessage}
                 countriesData={props.countriesData}
+                svgFlagPath={props.svgFlagPath}
             />
             <MapContainer>
                 {!loading && <WrongAnswer>{wrongSelection}</WrongAnswer>}

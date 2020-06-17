@@ -58,8 +58,8 @@ const CountriesInfoSidebar = (props) => {
             {props.currentNumber > 0 && props.currentNumber !== 11 ? (
                 <Container>
                     <img
-                        style={{ width: "20rem", height: "10rem" }}
-                        src={require(`../assets/EuropeFlags/${
+                        style={{ width: "20rem", height: "10rem", marginBottom: '3rem' }}
+                        src={require(`../assets/${props.svgFlagPath}/${
                             props.generatedStates[props.currentNumber]
                         }.svg`)}
                     />
