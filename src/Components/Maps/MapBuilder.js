@@ -67,8 +67,10 @@ const MapBuilder = (props) => {
                 resetTimer={resetTimer}
                 setResetTimer={setResetTimer}
                 setGeneratedStates={setGeneratedStates}
+                generatedStates={generatedStates}
                 countriesList={props.countriesList}
                 sideNoteMessage={props.sideNoteMessage}
+                countriesData={props.countriesData}
             />
             <MapContainer>
                 {!loading && <WrongAnswer>{wrongSelection}</WrongAnswer>}

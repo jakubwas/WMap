@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import styled from "styled-components";
 import PlayButton from "./Buttons/PlayButton";
 import generateQuiz from "./Maps/generateQuiz";
+import CountriesInfoSidebar from "../Components/CountriesInfoSidebar";
 
 const Container = styled.div`
     width: 35rem;
@@ -23,7 +24,6 @@ const FindContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-bottom: 0.8rem solid black;
     min-height: 30%;
 `;
 
@@ -72,6 +72,11 @@ const SideBarContainer = (props) => {
                     </PlayButton>
                 )}
             </FindContainer>
+            <CountriesInfoSidebar
+                generatedStates={props.generatedStates}
+                currentNumber={props.currentNumber}
+                countriesData={props.countriesData}
+            />
         </Container>
     );
 };

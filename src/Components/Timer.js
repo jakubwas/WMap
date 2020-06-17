@@ -51,7 +51,6 @@ const Timer = (props) => {
     };
 
     useEffect(() => {
-        console.log(props.resetTimer);
         if (seconds === "-" && props.isActive) {
             setSeconds(15);
         }
