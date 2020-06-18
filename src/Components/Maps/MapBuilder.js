@@ -5,6 +5,7 @@ import WrongAnswer from "./WrongAnswer";
 import "../../index.css";
 import loader from "../../assets/loader.gif";
 import RightSidebar from "../Sidebars/RightSidebar";
+import BackArrow from "../Buttons/BackArrow";
 
 const MapBuilder = (props) => {
     useEffect(() => {
@@ -22,7 +23,7 @@ const MapBuilder = (props) => {
             const correctAnswer = document.getElementById(generatedStates[currentNumber]);
             setWhereClicked(e.target.id);
             if (e.target.id !== generatedStates[currentNumber]) {
-                setWrongSelection(`Wrong, that's ${e.target.id} `);
+                setWrongSelection(`${e.target.id}`);
                 event.classList.add("wrong");
                 correctAnswer.classList.add("correct");
             } else {
@@ -73,6 +74,7 @@ const MapBuilder = (props) => {
                 svgFlagPath={props.svgFlagPath}
             />
             <MapContainer>
+                {!loading && <BackArrow />}
                 {!loading && <WrongAnswer>{wrongSelection}</WrongAnswer>}
                 {!loading && (
                     <RightSidebar

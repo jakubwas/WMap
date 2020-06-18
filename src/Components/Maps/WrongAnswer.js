@@ -6,11 +6,13 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 2rem;
+    margin-left: 12rem;
     margin-top: 1.2rem;
     color: red;
     font-size: 2.2rem;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
 `;
 
 const WrongAnswer = (props) => {
