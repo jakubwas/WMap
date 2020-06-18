@@ -17,7 +17,6 @@ const AfricaCountries = [
     "Guinea",
     "Gambia",
     "Guinea-Bissau",
-    "Equatorial Guinea",
     "Kenya",
     "Liberia",
     "Libya",
@@ -46,6 +45,6 @@ const AfricaCountries = [
     "South Africa",
     "Zambia",
     "Zimbabwe",
-    "Somalia"
+    "Somalia",
 ];
 export default AfricaCountries;

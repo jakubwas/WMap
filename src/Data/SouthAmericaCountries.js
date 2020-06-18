@@ -14,4 +14,3 @@ const SouthAmericaCountries = [
     "French Guiana",
 ];
 export default SouthAmericaCountries;
-

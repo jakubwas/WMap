@@ -8,7 +8,7 @@ const SouthAmericaMapSVG = (props) => {
             viewBox="0 0 286 469"
             fill="none"
             onClick={props.onClickHandler}
-            style={{marginTop: '3rem'}}
+            style={{ marginTop: "3rem" }}
         >
             <g id="Group 2" filter="url(#filter0_d)">
                 <path
@@ -17,7 +17,6 @@ const SouthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Bolivia"
@@ -25,7 +24,6 @@ const SouthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Brazil"
@@ -33,7 +31,6 @@ const SouthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Chile"
@@ -41,7 +38,6 @@ const SouthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Colombia"
@@ -49,7 +45,6 @@ const SouthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Ecuador"
@@ -57,7 +52,6 @@ const SouthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Guyana"
@@ -65,7 +59,6 @@ const SouthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Peru"
@@ -73,7 +66,6 @@ const SouthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Paraguay"
@@ -81,7 +73,6 @@ const SouthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Suriname"
@@ -89,7 +80,6 @@ const SouthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Uruguay"
@@ -97,7 +87,6 @@ const SouthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Venezuela"
@@ -105,7 +94,6 @@ const SouthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="French Guiana"
@@ -113,7 +101,6 @@ const SouthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinejoin="round"
                 />
             </g>
             <defs>

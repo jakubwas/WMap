@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment } from "react";
 import MapBuilder from "./MapBuilder";
 import EuropeMapSVG from "./EuropeMapSVG";
 import EuropeCountries from "../../Data/EuropeCountries";

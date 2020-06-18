@@ -17,7 +17,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Burundi"
@@ -25,7 +24,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Benin"
@@ -33,7 +31,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Burkina Faso"
@@ -41,7 +38,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Botswana"
@@ -49,15 +45,13 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
-                    id="Central African Rep."
+                    id="Central African Republic"
                     d="M505.2 399.1L504.2 398.4L500 394.4L499.1 390.1L501 384.4L500.9 378.7L493.7 370.1L492.2 364.2L484.5 366.5L478.5 372.1L469.9 387.2L458.6 393.6L446.8 392.8L443.4 394L444.6 398.9L438.3 403.7L433.2 409.1L417.9 414.4L414.9 411.3L412.8 411L410.6 414.6L400.6 415.6L394.5 429.6L391.6 432.2L390.8 442.9L392 448.7L391.1 452.8L396.9 460.1L397.9 465L402.5 472.2L408.1 476.6L408.7 482.9L410 486.9L416.3 474.1L423.6 466.7L431.8 469.1L439.7 469.8L440.7 460.2L445.4 453.1L451.9 448.7L462 453.4L469.8 458.5L478.8 459.9L487.9 462.6L491.5 454.2L493.1 453.1L498.7 454.5L512.2 447.6L517.1 450.6L521 450.1L522.8 446.8L527.3 445.6L536.5 447L544.4 447.4L548.4 445.9L546.4 441.5L537.2 436L534 427.7L528.8 421.7L520.5 414.5L520.4 410L513.6 404.5L505.2 399.1V399.1Z"
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="C&#195;&#180;te d&#39;Ivoire"
@@ -65,7 +59,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Cameroon"
@@ -73,7 +66,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Dem. Rep. Congo"
@@ -81,7 +73,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Congo"
@@ -89,7 +80,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Djibouti"
@@ -97,7 +87,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Algeria"
@@ -105,7 +94,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Egypt"
@@ -113,7 +101,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Eritrea"
@@ -121,7 +108,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Ethiopia"
@@ -129,7 +115,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Gabon"
@@ -137,7 +122,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Ghana"
@@ -145,7 +129,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Guinea"
@@ -153,7 +136,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Gambia"
@@ -161,7 +143,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Guinea-Bissau"
@@ -169,15 +150,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
-                />
-                <path
-                    id="Eq. Guinea"
-                    d="M352.1 487L332.2 486.7L328.1 502.2L330.3 504.3L334.5 503.5L352.2 503.7L352.1 487V487Z"
-                    fill="#2431EB"
-                    stroke="white"
-                    strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Kenya"
@@ -185,7 +157,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Liberia"
@@ -193,7 +164,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Libya"
@@ -201,7 +171,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Lesotho"
@@ -209,7 +178,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Morocco"
@@ -217,7 +185,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Madagascar"
@@ -225,7 +192,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Mali"
@@ -233,7 +199,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Mozambique"
@@ -241,7 +206,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Mauritania"
@@ -249,7 +213,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Malawi"
@@ -257,7 +220,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Namibia"
@@ -265,7 +227,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Niger"
@@ -273,7 +234,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Nigeria"
@@ -281,7 +241,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Rwanda"
@@ -289,15 +248,13 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
-                    id="W. Sahara"
+                    id="Western Sahara"
                     d="M112 135.6H110.2L110.3 143.1L103 143.5L99.0999 146.7H93.6999L89.4999 144.9L79.4999 146.3L75.2999 157.1L71.5999 158.2L65.5999 175.6L48.6999 190.6L44.2999 209.7L39.2999 215.9L37.6999 220.9L10.6999 222L10.4999 221.9L9.8999 227.8L12.5999 223.2L59.4999 223.3L57.5999 203.3L60.6999 196.2L71.8999 194.9L72.2999 159.5L111.2 160.2L111.7 139.3L112 136.6V135.6V135.6Z"
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Sudan"
@@ -305,15 +262,14 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
-                    id="S. Sudan"
+                    _
+                    id="South Sudan"
                     d="M626 380.2L624.5 375.5L618 370L616.3 360L617.5 349.8L611.8 348.9L611.1 351.9L603.8 352.7L606.8 356.7L608.1 365L601.6 372.6L595.8 382.6L589.6 384L579.2 375.9L574.6 378.8L573.5 382.8L567.2 385.4L566.9 388.3H554.8L553 385.4L544.3 385L539.9 387.3L536.6 386.1L530.1 378.1L528 374.3L519.2 376.2L516 382.6L513.1 394.9L509 397.5L505.2 399.1L513.6 404.5L520.4 410L520.5 414.5L528.8 421.7L534 427.7L537.2 436L546.4 441.5L548.4 445.9L555.9 457.3L561.4 459L564.6 456.7L570.3 457.6L577.1 454.7L580 460.6L590.9 469.8L595.9 466L603.7 469.1L613.5 465.8L622.1 465.9L629.5 459.5L636.9 451.2L645 442.1L637.6 427.1L631.9 423.9L629.7 418.3L623.4 411.6L615.9 410.6L619.9 402.7L626.3 402.4L628.1 398.2L627.7 387.4L626 387.1V380.2V380.2Z"
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Senegal"
@@ -321,7 +277,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Sierra Leone"
@@ -329,7 +284,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Swaziland"
@@ -337,7 +291,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Chad"
@@ -345,7 +298,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Togo"
@@ -353,7 +305,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Tunisia"
@@ -361,7 +312,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Tanzania"
@@ -369,7 +319,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Uganda"
@@ -377,7 +326,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="South Africa"
@@ -385,7 +333,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Zambia"
@@ -393,7 +340,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Zimbabwe"
@@ -401,7 +347,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Somalia"
@@ -409,7 +354,6 @@ const AfricaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
             </g>
             <defs>

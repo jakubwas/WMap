@@ -52,7 +52,6 @@ const CountriesInfoSidebar = (props) => {
 
     return (
         <Fragment>
-            {console.log(props.generatedStates)}
             {props.currentNumber > 0 && props.currentNumber !== 11 ? (
                 <CountriesInfoSidebarContainer>
                     <img
@@ -60,6 +59,7 @@ const CountriesInfoSidebar = (props) => {
                         src={require(`../../assets/${props.svgFlagPath}/${
                             props.generatedStates[props.currentNumber]
                         }.svg`)}
+                        alt="Flag"
                     />
                     <CountryInfoContainer>
                         <RowContainer>

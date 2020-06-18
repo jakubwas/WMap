@@ -13,7 +13,7 @@ const arrowStyle = {
 const BackArrow = () => {
     return (
         <Link to="/">
-            <img src={back} style={arrowStyle}></img>
+            <img src={back} style={arrowStyle} alt="Back array"></img>
         </Link>
     );
 };

@@ -17,7 +17,6 @@ const NorthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Canada"
@@ -25,7 +24,6 @@ const NorthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Costa Rica"
@@ -33,7 +31,6 @@ const NorthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Cuba"
@@ -41,7 +38,6 @@ const NorthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Dominican Republic"
@@ -49,7 +45,6 @@ const NorthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Guatemala"
@@ -57,7 +52,6 @@ const NorthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Honduras"
@@ -65,7 +59,6 @@ const NorthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Haiti"
@@ -73,7 +66,6 @@ const NorthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Jamaica"
@@ -81,7 +73,6 @@ const NorthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Mexico"
@@ -89,7 +80,6 @@ const NorthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Nicaragua"
@@ -97,7 +87,6 @@ const NorthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Panama"
@@ -105,7 +94,6 @@ const NorthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="El Salvador"
@@ -113,7 +101,6 @@ const NorthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="United States"
@@ -121,7 +108,6 @@ const NorthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Puerto Rico"
@@ -129,7 +115,6 @@ const NorthAmericaMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.5"
-                    strokeLinejoin="round"
                 />
             </g>
             <defs>

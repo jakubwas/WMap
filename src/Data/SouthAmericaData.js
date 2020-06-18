@@ -33,6 +33,7 @@ const SouthAmericaData = {
         capital: "Cayenne",
         population: 254541,
     },
+
     Guyana: {
         capital: "Georgetown",
         population: 746900,

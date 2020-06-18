@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
 import BackArrow from "../Buttons/BackArrow";
 import githubLogo from "../../assets/github-logo.svg";

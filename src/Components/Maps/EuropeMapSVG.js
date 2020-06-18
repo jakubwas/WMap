@@ -17,8 +17,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Austria"
@@ -26,8 +24,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Belgium"
@@ -35,8 +31,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Bulgaria"
@@ -44,8 +38,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Bosnia and Herzegovina "
@@ -53,8 +45,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Belarus"
@@ -62,8 +52,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Switzerland"
@@ -71,8 +59,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Czech Republic"
@@ -80,8 +66,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Germany"
@@ -89,8 +73,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Denmark"
@@ -98,8 +80,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Estonia"
@@ -107,8 +87,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Finland"
@@ -116,8 +94,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="United Kingdom"
@@ -125,8 +101,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Greece"
@@ -134,8 +108,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Croatia"
@@ -143,8 +115,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Hungary"
@@ -152,8 +122,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Ireland"
@@ -161,8 +129,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Iceland"
@@ -170,8 +136,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Italy"
@@ -179,8 +143,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Lithuania"
@@ -188,8 +150,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Luxembourg"
@@ -197,8 +157,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Latvia"
@@ -206,8 +164,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Moldova"
@@ -215,8 +171,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Macedonia"
@@ -224,8 +178,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Montenegro"
@@ -233,8 +185,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Norway"
@@ -242,8 +192,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Poland"
@@ -251,8 +199,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Portugal"
@@ -260,8 +206,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Romania"
@@ -269,8 +213,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Serbia"
@@ -278,8 +220,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Slovakia"
@@ -287,8 +227,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Slovenia"
@@ -296,8 +234,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Sweden"
@@ -305,8 +241,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Turkey"
@@ -314,8 +248,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Ukraine"
@@ -323,8 +255,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Kosovo"
@@ -332,8 +262,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Netherlands"
@@ -341,8 +269,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Spain"
@@ -350,8 +276,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="France"
@@ -359,8 +283,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
                 <path
                     id="Cyprus"
@@ -368,8 +290,6 @@ const EuropeMapSVG = (props) => {
                     fill="#2431EB"
                     stroke="white"
                     strokeWidth="0.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
                 />
             </g>
             <defs>
