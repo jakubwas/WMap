@@ -1,8 +1,9 @@
 import React from "react";
-import "./App.css";
-import Navbar from "./Components/Navbar";
-import MainContainer from "./Components/MainContainer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import Navbar from "./Components/Layout/Navbar";
+import MainContainer from "./Components/Layout/MainContainer";
+import Menu from "./Components/Layout/Menu";
 
 import USMap from "./Components/Maps/USMap";
 import EuropeMap from "./Components/Maps/EuropeMap";
@@ -10,8 +11,6 @@ import AfricaMap from "./Components/Maps/AfricaMap";
 import SouthAmericaMap from "./Components/Maps/SouthAmericaMap";
 import NorthAmericaMap from "./Components/Maps/NorthAmericaMap";
 import AsiaMap from "./Components/Maps/AsiaMap";
-
-import Menu from "./Components/Menu";
 
 function App() {
     return (
@@ -27,7 +26,6 @@ function App() {
                         <Route exact path="/SouthAmerica" component={SouthAmericaMap} />
                         <Route exact path="/NorthAmerica" component={NorthAmericaMap} />
                         <Route exact path="/Asia" component={AsiaMap} />
-                        {/* And more... */}
                     </Switch>
                 </MainContainer>
             </div>

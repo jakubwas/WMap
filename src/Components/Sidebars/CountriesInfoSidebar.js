@@ -57,7 +57,7 @@ const CountriesInfoSidebar = (props) => {
                 <CountriesInfoSidebarContainer>
                     <img
                         style={{ width: "20rem", height: "10rem", marginBottom: "3rem" }}
-                        src={require(`../assets/${props.svgFlagPath}/${
+                        src={require(`../../assets/${props.svgFlagPath}/${
                             props.generatedStates[props.currentNumber]
                         }.svg`)}
                     />

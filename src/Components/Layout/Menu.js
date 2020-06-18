@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import WorldMapSVG from "./Maps/WorldMapSVG";
-import MenuButton from "./Buttons/MenuButton";
-import "./Buttons/menuButton.css";
+import WorldMapSVG from "../Maps/WorldMapSVG";
+import MenuButton from "../Buttons/MenuButton";
+import "../Buttons/menuButton.css";
 
 const MenuContainer = styled.div`
     display: flex;

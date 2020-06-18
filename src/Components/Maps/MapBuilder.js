@@ -1,11 +1,10 @@
 import React, { Fragment, useState, useEffect } from "react";
-import USMapSVG from "./USMapSVG";
-import SideBarContainer from "../SideBarContainer";
+import LeftSidebar from "../Sidebars/LeftSidebar";
 import MapContainer from "./MapContainer";
 import WrongAnswer from "./WrongAnswer";
 import "../../index.css";
 import loader from "../../assets/loader.gif";
-import RightSidebarContainer from "../../RightSidebarContainer";
+import RightSidebar from "../Sidebars/RightSidebar";
 
 const MapBuilder = (props) => {
     useEffect(() => {
@@ -54,7 +53,7 @@ const MapBuilder = (props) => {
 
     return (
         <Fragment>
-            <SideBarContainer
+            <LeftSidebar
                 youClicked={whereClicked}
                 find={generatedStates[currentNumber]}
                 currentNumber={currentNumber}
@@ -76,7 +75,7 @@ const MapBuilder = (props) => {
             <MapContainer>
                 {!loading && <WrongAnswer>{wrongSelection}</WrongAnswer>}
                 {!loading && (
-                    <RightSidebarContainer
+                    <RightSidebar
                         isActive={isActive}
                         setIsActive={setIsActive}
                         currentNumber={currentNumber}

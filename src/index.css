@@ -25,7 +25,6 @@ html {
 path:hover {
     fill: rgb(36, 49, 163);
 }
-
     
 .wrong {
     fill: red !important;

@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
-import PlayButton from "./Buttons/PlayButton";
-import generateQuiz from "./Maps/generateQuiz";
-import CountriesInfoSidebar from "../Components/CountriesInfoSidebar";
+import PlayButton from "../Buttons/PlayButton";
+import generateQuiz from "../Maps/generateQuiz";
+import CountriesInfoSidebar from "./CountriesInfoSidebar";
 
 const RightSidebarContainer = styled.div`
     width: 35rem;
@@ -52,7 +52,7 @@ const FindCountryName = styled.div`
     font-weight: 600;
 `;
 
-const SideBarContainer = (props) => {
+const LeftSidebar = (props) => {
     const startGame = () => {
         generateQuiz(props.countriesList, props.setGeneratedStates);
         props.setIsActive(true);
@@ -107,4 +107,4 @@ const SideBarContainer = (props) => {
     );
 };
 
-export default SideBarContainer;
+export default LeftSidebar;

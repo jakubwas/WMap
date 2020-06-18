@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
+import InfoHeader from "./InfoHeader";
 
 const ClockContainer = styled.div`
     width: 7rem;
@@ -17,14 +18,14 @@ const Svg = styled.svg`
     height: 100px;
     transform: rotateY(-180deg) rotateZ(-90deg);
 `;
-const countdown = keyframes`
+const countdownAnimation = keyframes`
 from {
     stroke-dashoffset: 0px;
-    stroke: black;
+    stroke: rgb(0, 31, 63);
   }
   to {
     stroke-dashoffset: 220px;
-    stroke: red;
+    stroke: rgb(255, 0, 0);
   }
 `;
 const Circle = styled.circle`
@@ -32,9 +33,18 @@ const Circle = styled.circle`
     stroke-dashoffset: 0px;
     stroke-linecap: round;
     stroke-width: 5px;
-    stroke: #001f3f;
+    stroke: rgb(0, 31, 63);
     fill: none;
-    animation: ${countdown} 15s linear ${(props) => props.startStop};
+    animation: ${countdownAnimation} 15s linear ${(props) => props.startStop};
+`;
+const SecondsDisplay = styled.div`
+    font-size: ${(props) => props.fontSize};
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 `;
 
 const Timer = (props) => {
@@ -77,27 +87,14 @@ const Timer = (props) => {
 
     return (
         <ClockContainer>
-            <h1
-                style={{
-                    color: "#001f3f",
-                }}
-            >
-                Time
-            </h1>
+            <InfoHeader>Time</InfoHeader>
             <div style={{ position: "relative" }}>
-                <div
-                    style={{
-                        fontSize: "2rem",
-                        fontWeight: "600",
-                        color: "#001f3f",
-                        position: "absolute",
-                        top: "50%",
-                        left: "50%",
-                        transform: "translate(-50%, -50%)",
-                    }}
-                >
-                    {seconds}
-                </div>
+                {props.currentNumber === 11 || props.currentNumber === 0 ? (
+                    <SecondsDisplay fontSize="4rem">{seconds}</SecondsDisplay>
+                ) : (
+                    <SecondsDisplay fontSize="2rem">{seconds}</SecondsDisplay>
+                )}
+
                 <Svg>
                     <Circle startStop={startStop} r="35" cx="50" cy="50"></Circle>
                 </Svg>

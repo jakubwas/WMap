@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const NavigationBar = styled.nav`
-    background: #001f3f;
+    background: rgb(0, 31, 63);
     height: 7vh;
     min-height: 5rem;
     display: flex;
