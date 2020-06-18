@@ -1,39 +1,37 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import styled from "styled-components";
 
-const Container = styled.div`
+const CountriesInfoSidebarContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
 `;
-
 const CountryInfoContainer = styled.div`
     display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-`;
-
-const CountryInfoTitle = styled.div`
-    font-size: 1.4rem;
-    width: 7rem;
-    color: white;
-    margin-left: 1rem;
-    display: flex;
+    justify-content: center;
     align-items: center;
+    width: 100%;
 `;
-
+const CountryInfoTitle = styled.div`
+    display: flex;
+    align-items: flex-end;
+    width: 7rem;
+    margin-left: 1rem;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+`;
 const CountryInfoData = styled.div`
-    font-size: 2.4rem;
-    color: white;
+    display: flex;
+    align-items: flex-end;
     margin-left: 2rem;
     text-align: center;
-    display: flex;
-    align-items: center;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
     font-weight: 500;
+    color: rgba(255, 255, 255, 0.88);
 `;
-
 const RowContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
@@ -56,7 +54,7 @@ const CountriesInfoSidebar = (props) => {
         <Fragment>
             {console.log(props.generatedStates)}
             {props.currentNumber > 0 && props.currentNumber !== 11 ? (
-                <Container>
+                <CountriesInfoSidebarContainer>
                     <img
                         style={{ width: "20rem", height: "10rem", marginBottom: "3rem" }}
                         src={require(`../assets/${props.svgFlagPath}/${
@@ -65,7 +63,7 @@ const CountriesInfoSidebar = (props) => {
                     />
                     <CountryInfoContainer>
                         <RowContainer>
-                            <CountryInfoTitle>Capital: </CountryInfoTitle>
+                            <CountryInfoTitle>Capital : </CountryInfoTitle>
                             <CountryInfoData>
                                 {
                                     props.countriesData[
@@ -75,7 +73,7 @@ const CountriesInfoSidebar = (props) => {
                             </CountryInfoData>
                         </RowContainer>
                         <RowContainer>
-                            <CountryInfoTitle>Area: </CountryInfoTitle>
+                            <CountryInfoTitle>Area : </CountryInfoTitle>
                             <CountryInfoData>
                                 {displayArea(
                                     props.countriesData[
@@ -86,7 +84,7 @@ const CountriesInfoSidebar = (props) => {
                         </RowContainer>
                         {props.svgFlagPath !== "USFlags" && (
                             <RowContainer>
-                                <CountryInfoTitle>Population: </CountryInfoTitle>
+                                <CountryInfoTitle>Pop. : </CountryInfoTitle>
                                 <CountryInfoData>
                                     {displayPopulation(
                                         props.countriesData[
@@ -97,7 +95,7 @@ const CountriesInfoSidebar = (props) => {
                             </RowContainer>
                         )}
                     </CountryInfoContainer>
-                </Container>
+                </CountriesInfoSidebarContainer>
             ) : null}
         </Fragment>
     );

@@ -4,7 +4,7 @@ import PlayButton from "./Buttons/PlayButton";
 import generateQuiz from "./Maps/generateQuiz";
 import CountriesInfoSidebar from "../Components/CountriesInfoSidebar";
 
-const Container = styled.div`
+const RightSidebarContainer = styled.div`
     width: 35rem;
     height: 100%;
     border-right: 0.8rem solid black;
@@ -28,14 +28,24 @@ const FindContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    min-height: 30%;
+    min-height: 24%;
     background: #001f3f;
+    border-bottom: 0.8rem solid black;
+    margin-bottom: 3rem;
 `;
 
-const Find = styled.div`
-    font-size: 3.4rem;
+const FindHeading = styled.div`
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
     letter-spacing: 0.2rem;
-    color: rgb(36, 49, 235);
+    color: rgb(255, 255, 255);
+`;
+
+const FindCountryName = styled.div`
+    font-size: 2.9rem;
+    letter-spacing: 0.4rem;
+    color: rgba(255, 255, 255, 0.9);
     text-align: center;
     margin-top: 3rem;
     margin-bottom: 0.8rem;
@@ -59,7 +69,7 @@ const SideBarContainer = (props) => {
     };
 
     return (
-        <Container>
+        <RightSidebarContainer>
             <SideNote>
                 {props.svgFlagPath === "USFlags" ? (
                     props.sideNoteMessage
@@ -71,9 +81,10 @@ const SideBarContainer = (props) => {
             </SideNote>
             <FindContainer>
                 {props.currentNumber !== 0 && props.currentNumber !== 11 && (
-                    <h1 style={{ textAlign: "center", fontWeight: "400", color: "white" }}>
-                        Find: <Find>{props.find}</Find>
-                    </h1>
+                    <Fragment>
+                        <FindHeading>Find</FindHeading>
+                        <FindCountryName>{props.find}</FindCountryName>
+                    </Fragment>
                 )}
                 {props.currentNumber === 11 && (
                     <PlayButton backText="Start" onClick={playAgain}>
@@ -92,7 +103,7 @@ const SideBarContainer = (props) => {
                 currentNumber={props.currentNumber}
                 countriesData={props.countriesData}
             />
-        </Container>
+        </RightSidebarContainer>
     );
 };
 
