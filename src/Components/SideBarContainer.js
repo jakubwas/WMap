@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styled from "styled-components";
 import PlayButton from "./Buttons/PlayButton";
 import generateQuiz from "./Maps/generateQuiz";
@@ -14,9 +14,12 @@ const Container = styled.div`
 const SideNote = styled.h2`
     margin-top: 3rem;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
     text-align: center;
     padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-rigt: 1rem;
     border-bottom: 0.8rem solid black;
 `;
 
@@ -57,7 +60,15 @@ const SideBarContainer = (props) => {
 
     return (
         <Container>
-            <SideNote>{props.sideNoteMessage}</SideNote>
+            <SideNote>
+                {props.svgFlagPath === "USFlags" ? (
+                    props.sideNoteMessage
+                ) : (
+                    <Fragment>
+                        Can you name all countries <br /> in {props.sideNoteMessage} ?
+                    </Fragment>
+                )}
+            </SideNote>
             <FindContainer>
                 {props.currentNumber !== 0 && props.currentNumber !== 11 && (
                     <h1 style={{ textAlign: "center", fontWeight: "400", color: "white" }}>

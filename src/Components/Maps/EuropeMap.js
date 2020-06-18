@@ -11,7 +11,7 @@ const EuropeMap = () => {
                 Map={EuropeMapSVG}
                 countriesList={EuropeCountries}
                 countriesData={EuropeData}
-                sideNoteMessage={"Can you name all countries in Europe ?"}
+                sideNoteMessage={"Europe"}
                 svgFlagPath="EuropeFlags"
             />
         </Fragment>

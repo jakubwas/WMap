@@ -11,7 +11,7 @@ const SouthAmericaMap = () => {
                 Map={SouthAmericaMapSVG}
                 countriesList={SouthAmericaCountries}
                 countriesData={SouthAmericaData}
-                sideNoteMessage={"Can you name all countries in South America ?"}
+                sideNoteMessage={"America"}
                 svgFlagPath="SouthAmericaFlags"
             />
         </Fragment>

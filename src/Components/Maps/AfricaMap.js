@@ -11,7 +11,7 @@ const AfricaMap = () => {
                 Map={AfricaMapSVG}
                 countriesList={AfricaCountries}
                 countriesData={AfricaData}
-                sideNoteMessage={"Can you name all countries in Africa ?"}
+                sideNoteMessage={"Africa"}
                 svgFlagPath="AfricaFlags"
             />
         </Fragment>

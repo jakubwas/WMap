@@ -11,7 +11,7 @@ const AsiaMap = () => {
                 Map={AsiaMapSVG}
                 countriesList={AsiaCountries}
                 countriesData={AsiaData}
-                sideNoteMessage={"Can you name all countries in Asia ?"}
+                sideNoteMessage={"Asia"}
                 svgFlagPath="AsiaFlags"
             />
         </Fragment>
