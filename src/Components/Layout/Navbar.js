@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const NavigationBar = styled.nav`
     background: rgb(0, 31, 63);
@@ -42,10 +43,12 @@ const Navbar = () => {
     return (
         <NavigationBar>
             <AppTitle>WMap</AppTitle>
-            <Burger>
-                <Line />
-                <Line />
-            </Burger>
+            <Link to="/About">
+                <Burger>
+                    <Line />
+                    <Line />
+                </Burger>
+            </Link>
         </NavigationBar>
     );
 };

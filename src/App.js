@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./Components/Layout/Navbar";
 import MainContainer from "./Components/Layout/MainContainer";
 import Menu from "./Components/Layout/Menu";
+import About from "./Components/Layout/About";
 
 import USMap from "./Components/Maps/USMap";
 import EuropeMap from "./Components/Maps/EuropeMap";
@@ -19,6 +20,7 @@ function App() {
                 <Navbar />
                 <MainContainer>
                     <Switch>
+                        <Route exact path="/About" component={About} />
                         <Route exact path="/" component={Menu} />
                         <Route exact path="/USA" component={USMap} />
                         <Route exact path="/Europe" component={EuropeMap} />

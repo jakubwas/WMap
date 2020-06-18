@@ -1,2 +1,1 @@
-How well do you know your countries of the world? Do you think you know your way round an atlas really well? 
-Test your knowledge by learining and playing at the same time !
+WMAP is an entertaining and educational geography game that lets you explore the world and learn about its countries, capitals and flags.
