@@ -20,3 +20,23 @@ npm install
 ```bash
 npm start     
 ```
+
+## Version 1.0
+- Core components created: 
+  - Home Page (select mode)
+    - Us States
+    - Europe
+    - North America
+    - South America
+    - Africa
+    - Asia
+   - Game mode 
+     - Start Game
+     - Play Again
+     - Current country info: Flag, Capital city, Area
+     - Timer
+     - Current Round
+     - Score
+- Created logic of the game
+- Applied context-api
+- Applied styled-components
