@@ -21,7 +21,8 @@ npm install
 npm start     
 ```
 
-## Version 1.0
+## Version History
+#### Version 1.0
 - Core components created: 
   - Home Page (select mode)
     - Us States
