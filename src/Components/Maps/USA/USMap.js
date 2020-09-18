@@ -9,7 +9,7 @@ const USMap = () => {
     <MapBuilder
       Map={USMapSVG}
       countriesList={USStates}
-      sideNoteMessage={"Can you name the US States ?"}
+      sideNoteMessage={"United States of America"}
       countriesData={USStatesData}
       svgFlagPath="USFlags"
     />
