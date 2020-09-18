@@ -8,11 +8,10 @@ const Container = styled.div`
   justify-content: flex-start;
   margin-left: 12rem;
   margin-top: 1.2rem;
-  color: red;
+  color: rgb(244, 0, 0);
   font-size: 2.2rem;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.1rem;
 `;
 
 const WrongAnswer = (props) => {
