@@ -1,17 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { NavigationBar, AppTitle, Burger, Line } from "./Navbar.styles";
+// import { Link } from "react-router-dom";
+import {
+  StyledNavigationBar,
+  StyledAppTitle,
+  StyledBurger,
+  StyledLine,
+} from "./Navbar.styles";
 
 const Navbar = () => (
-  <NavigationBar>
-    <AppTitle>WMap</AppTitle>
-    {/* <Link to="/About">
-      <Burger>
-        <Line />
-        <Line />
-      </Burger>
-    </Link> */}
-  </NavigationBar>
+  <StyledNavigationBar>
+    <StyledAppTitle>wMap</StyledAppTitle>
+    {/* <Link to="/About"></Link> */}
+    <StyledBurger>
+      <StyledLine />
+      <StyledLine />
+    </StyledBurger>
+  </StyledNavigationBar>
 );
 
 export default Navbar;

@@ -2,13 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 import WorldMapSVG from "../../maps/WorldMapSVG";
 import MenuButton from "../../buttons/MenuButton/MenuButton";
-import { MenuContainer, MenuList, SelectMode } from "./Menu.styles";
+import {
+  StyledMenuContainer,
+  StyledMenuList,
+  StyledSelectMode,
+} from "./Menu.styles";
 
 const Menu = () => (
-  <MenuContainer>
+  <StyledMenuContainer>
     <WorldMapSVG />
-    <SelectMode>Select Mode</SelectMode>
-    <MenuList>
+    <StyledSelectMode>Select Mode</StyledSelectMode>
+    <StyledMenuList>
       <MenuButton>
         <Link to="/USA" className="link">
           US states
@@ -39,8 +43,8 @@ const Menu = () => (
           Asia
         </Link>
       </MenuButton>
-    </MenuList>
-  </MenuContainer>
+    </StyledMenuList>
+  </StyledMenuContainer>
 );
 
 export default Menu;

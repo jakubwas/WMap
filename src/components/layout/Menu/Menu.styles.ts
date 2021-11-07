@@ -1,7 +1,6 @@
 import styled from "styled-components";
-// import "../Buttons/menuButton.css";
 
-export const MenuContainer = styled.div`
+export const StyledMenuContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -11,7 +10,7 @@ export const MenuContainer = styled.div`
   background: white;
 `;
 
-export const MenuList = styled.div`
+export const StyledMenuList = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -20,7 +19,7 @@ export const MenuList = styled.div`
   flex-wrap: wrap;
 `;
 
-export const SelectMode = styled.h1`
+export const StyledSelectMode = styled.h1`
   font-size: 2rem;
   font-weight: 700;
   color: black;

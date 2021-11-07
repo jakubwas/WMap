@@ -1,8 +1,11 @@
-import React from "react";
+import React, { ReactChildren, ReactChild } from "react";
 import { StyledContainer } from "./MainContainer.styles";
 
-const MainContainer = (props: any) => (
-  // eslint-disable-next-line react/destructuring-assignment
+interface ComponentProps {
+  children: ReactChild | ReactChildren;
+}
+
+const MainContainer = (props: ComponentProps) => (
   <StyledContainer>{props.children}</StyledContainer>
 );
 export default MainContainer;
