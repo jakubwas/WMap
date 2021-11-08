@@ -13,9 +13,7 @@ const MenuButton = (props: ComponentProps) => (
   <StyledMainContainer>
     <StyledButtonContainer>
       <StyledBtn className="menu-btn-effect">
-        <span style={{ width: "100%", height: "100%", display: "block" }}>
-          {props.children}
-        </span>
+        <span>{props.children}</span>
       </StyledBtn>
     </StyledButtonContainer>
   </StyledMainContainer>

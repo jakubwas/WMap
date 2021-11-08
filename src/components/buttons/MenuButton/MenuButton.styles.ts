@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../../styles";
 
 export const StyledMainContainer = styled.div`
   display: flex;
@@ -92,4 +93,15 @@ export const StyledBtn = styled.div`
   position: relative;
   text-transform: uppercase;
   width: 100%;
+
+  @media ${device.dL1} {
+    max-width: 18rem;
+    line-height: 4.4rem;
+  }
+
+  span {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
 `;
