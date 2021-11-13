@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "../../../styles";
+import { device } from "../../styles";
 
 export const StyledMenuContainer = styled.div`
   display: flex;

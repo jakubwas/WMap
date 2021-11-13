@@ -2,9 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { basicTheme, GlobalStyles } from "./styles/Theme.styles";
-import MainContainer from "./components/layout/MainContainer/MainContainer";
-import Navbar from "./components/layout/Navbar/Navbar";
-import Menu from "./components/layout/Menu/Menu";
+import MainContainer from "./components/layout/MainContainer";
+import Navbar from "./components/layout/Navbar";
+import Menu from "./components/layout/Menu";
 
 const App = (): JSX.Element => (
   <ThemeProvider theme={basicTheme}>

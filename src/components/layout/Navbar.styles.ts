@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "../../../styles";
+import { device } from "../../styles";
 
 export const StyledNavigationBar = styled.nav`
   background: rgb(0, 31, 63);
