@@ -5,24 +5,19 @@ import { basicTheme, GlobalStyles } from "./styles/Theme.styles";
 import AppContainer from "./components/AppContainer";
 import Navbar from "./components/Navbar";
 import Menu from "./components/Menu";
+import SelectedMode from "./components/SelectedMode";
 
-const App = (): JSX.Element => (
+const App = () => (
   <ThemeProvider theme={basicTheme}>
     <GlobalStyles />
     <Router>
       <div style={{ height: "100%" }}>
         <Navbar />
         <AppContainer>
-          {/* <Routes> */}
-          {/* <Route exact path="/About" component={About} /> */}
-          <Menu />
-          {/* <Route exact path="/USA" component={USMap} /> */}
-          {/* <Route exact path="/Europe" component={EuropeMap} /> */}
-          {/* <Route exact path="/Africa" component={AfricaMap} /> */}
-          {/* <Route exact path="/SouthAmerica" component={SouthAmericaMap} /> */}
-          {/* <Route exact path="/NorthAmerica" component={NorthAmericaMap} /> */}
-          {/* <Route exact path="/Asia" component={AsiaMap} /> */}
-          {/* </Routes> */}
+          <Routes>
+            <Route path="/" element={<Menu />} />
+            <Route path="/:map" element={<SelectedMode />} />
+          </Routes>
         </AppContainer>
       </div>
     </Router>

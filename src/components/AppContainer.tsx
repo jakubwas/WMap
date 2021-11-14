@@ -15,4 +15,5 @@ interface ComponentProps {
 const AppContainer = (props: ComponentProps) => (
   <StyledContainer>{props.children}</StyledContainer>
 );
+
 export default AppContainer;

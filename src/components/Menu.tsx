@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -34,6 +35,18 @@ const StyledSelectMode = styled.h1`
   }
 `;
 
+const modes = [
+  { name: "US states", to: "/usa" },
+  { name: "Countries", to: "/" },
+];
+const countries = [
+  { name: "North America", to: "/northamerica" },
+  { name: "South America", to: "/southamerica" },
+  { name: "Europe", to: "/europe" },
+  { name: "Africa", to: "/africa" },
+  { name: "Asia", to: "/asia" },
+];
+
 const Menu = () => {
   const [mode, setMode] = useState("");
 
@@ -46,50 +59,33 @@ const Menu = () => {
       <StyledMenuList mode={mode}>
         {mode !== "countries" ? (
           <>
-            <MenuButton>
-              <Link to="/USA" className="link">
-                US states
-              </Link>
-            </MenuButton>
-            <MenuButton>
-              <Link
-                to="/"
-                className="link"
-                onClick={() => {
-                  setMode("countries");
-                }}
-              >
-                Countries
-              </Link>
-            </MenuButton>
+            {modes.map((element, index) => (
+              <MenuButton key={index}>
+                <Link
+                  to={element.to}
+                  className="link"
+                  onClick={() => {
+                    if (element.to === "/") {
+                      setMode("countries");
+                    } else {
+                      setMode("");
+                    }
+                  }}
+                >
+                  {element.name}
+                </Link>
+              </MenuButton>
+            ))}
           </>
         ) : (
           <>
-            <MenuButton>
-              <Link to="/NorthAmerica" className="link">
-                North America
-              </Link>
-            </MenuButton>
-            <MenuButton>
-              <Link to="/SouthAmerica" className="link">
-                South America
-              </Link>
-            </MenuButton>
-            <MenuButton>
-              <Link to="/Europe" className="link">
-                Europe
-              </Link>
-            </MenuButton>
-            <MenuButton>
-              <Link to="/Africa" className="link">
-                Africa
-              </Link>
-            </MenuButton>
-            <MenuButton>
-              <Link to="/Asia" className="link">
-                Asia
-              </Link>
-            </MenuButton>
+            {countries.map((element, index) => (
+              <MenuButton key={index}>
+                <Link to={element.to} className="link">
+                  {element.name}
+                </Link>
+              </MenuButton>
+            ))}
           </>
         )}
       </StyledMenuList>
