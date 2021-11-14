@@ -11,17 +11,17 @@ export const StyledMenuContainer = styled.div`
   background: white;
 `;
 
-export const StyledMenuList = styled.div`
+export const StyledMenuList = styled.div<{ mode: string }>`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 80%;
+  width: ${(props) => (props.mode === "countries" ? "80%" : "50%")};
   margin: 2rem 0;
   flex-wrap: wrap;
 `;
 
 export const StyledSelectMode = styled.h1`
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   color: black;
   text-align: center;

@@ -3,7 +3,7 @@ import { device } from "../../styles";
 
 export const StyledNavigationBar = styled.nav`
   background: rgb(0, 31, 63);
-  height: 5vh;
+  height: 7vh;
   min-height: 4rem;
   display: flex;
   justify-content: space-between;
@@ -16,7 +16,7 @@ export const StyledNavigationBar = styled.nav`
 `;
 
 export const StyledAppTitle = styled.h1`
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin-left: 2rem;
   color: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;

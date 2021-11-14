@@ -7,6 +7,7 @@ export const StyledMainContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  margin: 4rem 0;
 
   .menu-btn-effect {
     color: #fff;

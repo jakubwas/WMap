@@ -17,7 +17,7 @@ const Menu = () => {
       <StyledSelectMode>
         {mode === "countries" ? "Select Region" : "Select Mode"}
       </StyledSelectMode>
-      <StyledMenuList>
+      <StyledMenuList mode={mode}>
         {mode !== "countries" ? (
           <>
             <MenuButton>
