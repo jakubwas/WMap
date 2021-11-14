@@ -1,7 +1,8 @@
+import React, { ReactChildren, ReactChild } from "react";
 import styled from "styled-components";
-import { device } from "../../styles";
+import { device } from "../styles";
 
-export const StyledMainContainer = styled.div`
+const StyledMainContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -70,8 +71,7 @@ export const StyledMainContainer = styled.div`
     color: black;
   }
 `;
-
-export const StyledButtonContainer = styled.div`
+const StyledButtonContainer = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -82,8 +82,7 @@ export const StyledButtonContainer = styled.div`
   padding-bottom: 1rem;
   pointer-events: none;
 `;
-
-export const StyledBtn = styled.div`
+const StyledBtn = styled.div`
   letter-spacing: 0.1rem;
   cursor: pointer;
   font-size: 1.4rem;
@@ -106,3 +105,19 @@ export const StyledBtn = styled.div`
     display: block;
   }
 `;
+
+interface ComponentProps {
+  children: ReactChild | ReactChildren;
+}
+
+const MenuButton = (props: ComponentProps) => (
+  <StyledMainContainer>
+    <StyledButtonContainer>
+      <StyledBtn className="menu-btn-effect">
+        <span>{props.children}</span>
+      </StyledBtn>
+    </StyledButtonContainer>
+  </StyledMainContainer>
+);
+
+export default MenuButton;

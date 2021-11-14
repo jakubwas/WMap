@@ -2,9 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { basicTheme, GlobalStyles } from "./styles/Theme.styles";
-import MainContainer from "./components/layout/MainContainer";
-import Navbar from "./components/layout/Navbar";
-import Menu from "./components/layout/Menu";
+import AppContainer from "./components/AppContainer";
+import Navbar from "./components/Navbar";
+import Menu from "./components/Menu";
 
 const App = (): JSX.Element => (
   <ThemeProvider theme={basicTheme}>
@@ -12,7 +12,7 @@ const App = (): JSX.Element => (
     <Router>
       <div style={{ height: "100%" }}>
         <Navbar />
-        <MainContainer>
+        <AppContainer>
           {/* <Routes> */}
           {/* <Route exact path="/About" component={About} /> */}
           <Menu />
@@ -23,7 +23,7 @@ const App = (): JSX.Element => (
           {/* <Route exact path="/NorthAmerica" component={NorthAmericaMap} /> */}
           {/* <Route exact path="/Asia" component={AsiaMap} /> */}
           {/* </Routes> */}
-        </MainContainer>
+        </AppContainer>
       </div>
     </Router>
   </ThemeProvider>

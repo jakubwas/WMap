@@ -1,5 +1,7 @@
+import React from "react";
+// import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { device } from "../../styles";
+import { device } from "../styles";
 
 export const StyledNavigationBar = styled.nav`
   background: rgb(0, 31, 63);
@@ -14,14 +16,12 @@ export const StyledNavigationBar = styled.nav`
     min-height: 4rem;
   }
 `;
-
 export const StyledAppTitle = styled.h1`
   font-size: 2.4rem;
   margin-left: 2rem;
   color: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
 `;
-
 export const StyledBurger = styled.div`
   display: flex;
   flex-direction: column;
@@ -36,7 +36,6 @@ export const StyledBurger = styled.div`
     width: 4rem;
   }
 `;
-
 export const StyledLine = styled.div`
   width: 100%;
   height: 0.2rem;
@@ -48,3 +47,16 @@ export const StyledLine = styled.div`
     margin: 0.4rem 0;
   }
 `;
+
+const Navbar = () => (
+  <StyledNavigationBar>
+    <StyledAppTitle>wMap</StyledAppTitle>
+    {/* <Link to="/About"></Link> */}
+    <StyledBurger>
+      <StyledLine />
+      <StyledLine />
+    </StyledBurger>
+  </StyledNavigationBar>
+);
+
+export default Navbar;
