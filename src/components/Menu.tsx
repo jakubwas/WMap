@@ -5,6 +5,7 @@ import styled from "styled-components";
 import WorldMapSVG from "./WorldMapSVG";
 import MenuButton from "./MenuButton";
 import { device } from "../styles";
+import { modes, countries } from "../data/Modes";
 
 const StyledMenuContainer = styled.div`
   display: flex;
@@ -34,18 +35,6 @@ const StyledSelectMode = styled.h1`
     font-size: 3.5rem;
   }
 `;
-
-const modes = [
-  { name: "US states", to: "/usa" },
-  { name: "Countries", to: "/" },
-];
-const countries = [
-  { name: "North America", to: "/northamerica" },
-  { name: "South America", to: "/southamerica" },
-  { name: "Europe", to: "/europe" },
-  { name: "Africa", to: "/africa" },
-  { name: "Asia", to: "/asia" },
-];
 
 const Menu = () => {
   const [mode, setMode] = useState("");
