@@ -19,3 +19,11 @@ export const setCurrentRoundAction = (round: number) => ({
 export const setStartGameAction = () => ({
   type: types.SET_START_GAME,
 });
+
+export const setPauseAction = () => ({
+  type: types.SET_PAUSE,
+});
+
+export const setResumeAction = () => ({
+  type: types.SET_RESUME,
+});

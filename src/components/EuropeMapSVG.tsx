@@ -1,13 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 
-const EuropeMapSVG = () => (
+const EuropeMapSVG = (props: any) => (
   <svg
     width="100%"
     height="100%"
     viewBox="0 0 855 562"
     fill="none"
     onClick={(e: any) => {
+      props.onClickHandler();
       console.log(e.target.id);
     }}
   >

@@ -24,6 +24,9 @@ const StyledSideNote = styled.h2`
 
 const LeftSidebar = () => {
   const currentMode = useSelector((state: RootState) => state.currentMode);
+  const currentRound = useSelector(
+    (state: RootState) => state.currentGame.round,
+  );
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -41,6 +44,7 @@ const LeftSidebar = () => {
       <button type="submit" onClick={startGameHandler}>
         Start
       </button>
+      <h1>{currentRound + 1}</h1>
     </StyledLeftSidebarContainer>
   );
 };

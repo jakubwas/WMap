@@ -26,13 +26,23 @@ const currentGame = (state = currentGameInitState, action: any) => {
     case types.SET_CURRENT_ROUND:
       return {
         ...state,
-        round: action.payload.round,
+        round: state.round + 1,
       };
     case types.SET_START_GAME:
       return {
         ...state,
         isActive: true,
         round: 0,
+      };
+    case types.SET_PAUSE:
+      return {
+        ...state,
+        isActive: false,
+      };
+    case types.SET_RESUME:
+      return {
+        ...state,
+        isActive: true,
       };
     default:
       return state;
