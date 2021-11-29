@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../store";
 import { generateQuiz } from "../utils/generateQuiz";
-import { setGeneratedQuizAction } from "../store/actions";
+import { setGeneratedQuizAction, setStartGameAction } from "../store/actions";
 
 const StyledLeftSidebarContainer = styled.div`
   width: 30rem;
@@ -31,9 +31,16 @@ const LeftSidebar = () => {
     dispatch(setGeneratedQuizAction(quiz));
   }, [currentMode, dispatch]);
 
+  const startGameHandler = () => {
+    dispatch(setStartGameAction());
+  };
+
   return (
     <StyledLeftSidebarContainer>
       <StyledSideNote>{currentMode}</StyledSideNote>
+      <button type="submit" onClick={startGameHandler}>
+        Start
+      </button>
     </StyledLeftSidebarContainer>
   );
 };

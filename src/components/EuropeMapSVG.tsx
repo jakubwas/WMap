@@ -1,7 +1,16 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 
 const EuropeMapSVG = () => (
-  <svg width="100%" height="100%" viewBox="0 0 855 562" fill="none">
+  <svg
+    width="100%"
+    height="100%"
+    viewBox="0 0 855 562"
+    fill="none"
+    onClick={(e: any) => {
+      console.log(e.target.id);
+    }}
+  >
     <g id="europe" filter="url(#filter0_d)">
       <path
         id="Albania"

@@ -10,3 +10,12 @@ export const setGeneratedQuizAction = (quiz: any) => ({
   type: types.SET_GENERATED_QUIZ,
   payload: quiz,
 });
+
+export const setCurrentRoundAction = (round: number) => ({
+  type: types.SET_CURRENT_ROUND,
+  payload: round,
+});
+
+export const setStartGameAction = () => ({
+  type: types.SET_START_GAME,
+});

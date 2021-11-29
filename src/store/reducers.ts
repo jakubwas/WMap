@@ -12,7 +12,9 @@ const currentMode = (state = null, action: any) => {
 };
 
 const currentGameInitState = {
+  isActive: false,
   generatedQuiz: null,
+  round: -1,
 };
 const currentGame = (state = currentGameInitState, action: any) => {
   switch (action.type) {
@@ -20,6 +22,17 @@ const currentGame = (state = currentGameInitState, action: any) => {
       return {
         ...state,
         generatedQuiz: action.payload,
+      };
+    case types.SET_CURRENT_ROUND:
+      return {
+        ...state,
+        round: action.payload.round,
+      };
+    case types.SET_START_GAME:
+      return {
+        ...state,
+        isActive: true,
+        round: 0,
       };
     default:
       return state;

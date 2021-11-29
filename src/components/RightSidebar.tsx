@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Timer from "./Timer";
 
 const StyledRightSidebarContainer = styled.div`
   width: 10vw;
@@ -8,7 +9,9 @@ const StyledRightSidebarContainer = styled.div`
 `;
 
 const RightSidebar = () => (
-  <StyledRightSidebarContainer>Right Sidebar</StyledRightSidebarContainer>
+  <StyledRightSidebarContainer>
+    <Timer />
+  </StyledRightSidebarContainer>
 );
 
 export default RightSidebar;
