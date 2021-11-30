@@ -23,7 +23,7 @@ const StyledMapContainer = styled.div<{ isActive: boolean }>`
 `;
 
 const Map = () => {
-  const currentGame = useSelector((state: RootState) => state);
+  const currentGame = useSelector((state: RootState) => state.currentGame);
   const { isActive, round, generatedQuiz } = currentGame;
 
   const dispatch = useDispatch();

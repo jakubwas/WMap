@@ -30,3 +30,8 @@ export const setResumeAction = () => ({
 export const setPointsAction = () => ({
   type: types.SET_POINTS,
 });
+
+export const setTimerAction = (timer: number) => ({
+  type: types.SET_TIMER,
+  payload: timer,
+});

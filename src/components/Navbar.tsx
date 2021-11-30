@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { device } from "../styles";
 
@@ -51,11 +51,12 @@ export const StyledLine = styled.div`
 const Navbar = () => (
   <StyledNavigationBar>
     <StyledAppTitle>wMap</StyledAppTitle>
-    {/* <Link to="/About"></Link> */}
-    <StyledBurger>
-      <StyledLine />
-      <StyledLine />
-    </StyledBurger>
+    <Link to="/settings">
+      <StyledBurger>
+        <StyledLine />
+        <StyledLine />
+      </StyledBurger>
+    </Link>
   </StyledNavigationBar>
 );
 

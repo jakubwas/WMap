@@ -27,7 +27,7 @@ const StyledSideNote = styled.h2`
 `;
 
 const Sidebar = () => {
-  const currentGame = useSelector((state: RootState) => state);
+  const currentGame = useSelector((state: RootState) => state.currentGame);
   const { round, generatedQuiz, points, currentMode } = currentGame;
   const dispatch = useDispatch();
 

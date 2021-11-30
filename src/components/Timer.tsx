@@ -13,8 +13,9 @@ const StyledSecondsHeader = styled.div`
 
 const Timer = () => {
   const dispatch = useDispatch();
-  const isActive = useSelector((state: RootState) => state.isActive);
-  const currentRound = useSelector((state: RootState) => state.round);
+
+  const currentGame = useSelector((state: RootState) => state.currentGame);
+  const { isActive, round } = currentGame;
 
   const [seconds, setSeconds] = useState(15);
 
@@ -33,7 +34,7 @@ const Timer = () => {
       return () => clearInterval(interval);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isActive, currentRound]);
+  }, [isActive, round]);
 
   return <StyledSecondsHeader>{seconds}</StyledSecondsHeader>;
 };

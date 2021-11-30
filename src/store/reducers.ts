@@ -1,5 +1,22 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { combineReducers } from "redux";
 import * as types from "./types";
+
+const settingsInitState = {
+  timer: 15,
+};
+
+export const settings = (state = settingsInitState, action: any) => {
+  switch (action.type) {
+    case types.SET_TIMER:
+      return {
+        ...state,
+        timer: action.payload,
+      };
+    default:
+      return state;
+  }
+};
 
 const currentGameInitState = {
   currentMode: null,
@@ -8,7 +25,7 @@ const currentGameInitState = {
   round: -1,
   points: 0,
 };
-const reducer = (state = currentGameInitState, action: any) => {
+export const currentGame = (state = currentGameInitState, action: any) => {
   switch (action.type) {
     case types.SET_MODE:
       return {
@@ -58,4 +75,4 @@ const reducer = (state = currentGameInitState, action: any) => {
   }
 };
 
-export default reducer;
+export default combineReducers({ settings, currentGame });
