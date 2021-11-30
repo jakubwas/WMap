@@ -27,3 +27,7 @@ export const setPauseAction = () => ({
 export const setResumeAction = () => ({
   type: types.SET_RESUME,
 });
+
+export const setPointsAction = () => ({
+  type: types.SET_POINTS,
+});

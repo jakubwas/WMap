@@ -15,6 +15,7 @@ const currentGameInitState = {
   isActive: false,
   generatedQuiz: null,
   round: -1,
+  points: 0,
 };
 const currentGame = (state = currentGameInitState, action: any) => {
   switch (action.type) {
@@ -24,6 +25,12 @@ const currentGame = (state = currentGameInitState, action: any) => {
         generatedQuiz: action.payload,
       };
     case types.SET_CURRENT_ROUND:
+      if (state.round === 9) {
+        return {
+          ...state,
+          isActive: false,
+        };
+      }
       return {
         ...state,
         round: state.round + 1,
@@ -44,6 +51,12 @@ const currentGame = (state = currentGameInitState, action: any) => {
         ...state,
         isActive: true,
       };
+    case types.SET_POINTS:
+      return {
+        ...state,
+        points: state.points + 1,
+      };
+
     default:
       return state;
   }

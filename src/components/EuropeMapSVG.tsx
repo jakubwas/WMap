@@ -8,8 +8,8 @@ const EuropeMapSVG = (props: any) => (
     viewBox="0 0 855 562"
     fill="none"
     onClick={(e: any) => {
-      props.onClickHandler();
-      console.log(e.target.id);
+      props.onClickHandler(e);
+      // console.log(e.target.id);
     }}
   >
     <g id="europe" filter="url(#filter0_d)">

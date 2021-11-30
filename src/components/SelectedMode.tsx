@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { MODES } from "../data/Modes";
-import RightSidebar from "./RightSidebar";
-import LeftSidebar from "./LeftSidebar";
+import Sidebar from "./Sidebar";
 import Map from "./Map";
 import { setCurrentModeAction } from "../store/actions";
 
@@ -24,9 +23,8 @@ const SelectedMode = () => {
 
   return (
     <>
-      <LeftSidebar />
+      <Sidebar />
       <Map />
-      <RightSidebar />
     </>
   );
 };

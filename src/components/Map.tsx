@@ -3,7 +3,12 @@ import { useSelector, useDispatch } from "react-redux";
 import styled from "styled-components";
 import { RootState } from "../store";
 import EuropeMapSVG from "./EuropeMapSVG";
-import { setPauseAction, setResumeAction } from "../store/actions";
+import {
+  setPauseAction,
+  setResumeAction,
+  setPointsAction,
+  setCurrentRoundAction,
+} from "../store/actions";
 
 const StyledMapContainer = styled.div<{ isActive: boolean }>`
   height: 100%;
@@ -17,14 +22,18 @@ const StyledMapContainer = styled.div<{ isActive: boolean }>`
 `;
 
 const Map = () => {
-  const isActive = useSelector(
-    (state: RootState) => state.currentGame.isActive,
-  );
+  const currentGame = useSelector((state: RootState) => state.currentGame);
+  const { isActive, round, generatedQuiz } = currentGame;
+
   const dispatch = useDispatch();
 
-  const mapClickHandler = () => {
+  const mapClickHandler = (e: any) => {
     dispatch(setPauseAction());
+    if (e.target.id === generatedQuiz[round].name) {
+      dispatch(setPointsAction());
+    }
     setTimeout(() => {
+      dispatch(setCurrentRoundAction(round + 1));
       dispatch(setResumeAction());
     }, 2000);
   };

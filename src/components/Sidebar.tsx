@@ -4,8 +4,9 @@ import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../store";
 import { generateQuiz } from "../utils/generateQuiz";
 import { setGeneratedQuizAction, setStartGameAction } from "../store/actions";
+import Timer from "./Timer";
 
-const StyledLeftSidebarContainer = styled.div`
+const StyledSidebarContainer = styled.div`
   width: 30rem;
   height: 100%;
   background: rgb(237, 237, 237);
@@ -22,11 +23,10 @@ const StyledSideNote = styled.h2`
   border-bottom: 0.3rem solid black;
 `;
 
-const LeftSidebar = () => {
+const Sidebar = () => {
   const currentMode = useSelector((state: RootState) => state.currentMode);
-  const currentRound = useSelector(
-    (state: RootState) => state.currentGame.round,
-  );
+  const currentGame = useSelector((state: RootState) => state.currentGame);
+  const { round, generatedQuiz, points } = currentGame;
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -39,14 +39,17 @@ const LeftSidebar = () => {
   };
 
   return (
-    <StyledLeftSidebarContainer>
+    <StyledSidebarContainer>
       <StyledSideNote>{currentMode}</StyledSideNote>
       <button type="submit" onClick={startGameHandler}>
         Start
       </button>
-      <h1>{currentRound + 1}</h1>
-    </StyledLeftSidebarContainer>
+      <Timer />
+      <h1>Round: {round + 1}</h1>
+      <h1>Score: {points}</h1>
+      {round !== -1 && <h1>Find {generatedQuiz[round].name}</h1>}
+    </StyledSidebarContainer>
   );
 };
 
-export default LeftSidebar;
+export default Sidebar;
