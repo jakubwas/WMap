@@ -11,9 +11,8 @@ export const setGeneratedQuizAction = (quiz: any) => ({
   payload: quiz,
 });
 
-export const setCurrentRoundAction = (round: number) => ({
+export const setCurrentRoundAction = () => ({
   type: types.SET_CURRENT_ROUND,
-  payload: round,
 });
 
 export const setStartGameAction = () => ({

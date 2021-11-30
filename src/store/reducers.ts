@@ -1,24 +1,20 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { combineReducers } from "redux";
 import * as types from "./types";
 
-const currentMode = (state = null, action: any) => {
-  switch (action.type) {
-    case types.SET_MODE:
-      return action.payload;
-    default:
-      return state;
-  }
-};
-
 const currentGameInitState = {
+  currentMode: null,
   isActive: false,
   generatedQuiz: null,
   round: -1,
   points: 0,
 };
-const currentGame = (state = currentGameInitState, action: any) => {
+const reducer = (state = currentGameInitState, action: any) => {
   switch (action.type) {
+    case types.SET_MODE:
+      return {
+        ...state,
+        currentMode: action.payload,
+      };
     case types.SET_GENERATED_QUIZ:
       return {
         ...state,
@@ -62,4 +58,4 @@ const currentGame = (state = currentGameInitState, action: any) => {
   }
 };
 
-export default combineReducers({ currentMode, currentGame });
+export default reducer;

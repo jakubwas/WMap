@@ -13,12 +13,8 @@ const StyledSecondsHeader = styled.div`
 
 const Timer = () => {
   const dispatch = useDispatch();
-  const isActive = useSelector(
-    (state: RootState) => state.currentGame.isActive,
-  );
-  const currentRound = useSelector(
-    (state: RootState) => state.currentGame.round,
-  );
+  const isActive = useSelector((state: RootState) => state.isActive);
+  const currentRound = useSelector((state: RootState) => state.round);
 
   const [seconds, setSeconds] = useState(15);
 
@@ -31,7 +27,7 @@ const Timer = () => {
         if (++x === 15) {
           window.clearInterval(interval);
           setSeconds(15);
-          dispatch(setCurrentRoundAction(currentRound + 1));
+          dispatch(setCurrentRoundAction());
         }
       }, 1000);
       return () => clearInterval(interval);

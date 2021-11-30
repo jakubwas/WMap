@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import styled from "styled-components";
@@ -22,7 +23,7 @@ const StyledMapContainer = styled.div<{ isActive: boolean }>`
 `;
 
 const Map = () => {
-  const currentGame = useSelector((state: RootState) => state.currentGame);
+  const currentGame = useSelector((state: RootState) => state);
   const { isActive, round, generatedQuiz } = currentGame;
 
   const dispatch = useDispatch();
@@ -33,8 +34,10 @@ const Map = () => {
       dispatch(setPointsAction());
     }
     setTimeout(() => {
-      dispatch(setCurrentRoundAction(round + 1));
-      dispatch(setResumeAction());
+      dispatch(setCurrentRoundAction());
+      if (round !== 9) {
+        dispatch(setResumeAction());
+      }
     }, 2000);
   };
 

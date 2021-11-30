@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable global-require */
+/* eslint-disable import/no-dynamic-require */
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
@@ -24,9 +27,8 @@ const StyledSideNote = styled.h2`
 `;
 
 const Sidebar = () => {
-  const currentMode = useSelector((state: RootState) => state.currentMode);
-  const currentGame = useSelector((state: RootState) => state.currentGame);
-  const { round, generatedQuiz, points } = currentGame;
+  const currentGame = useSelector((state: RootState) => state);
+  const { round, generatedQuiz, points, currentMode } = currentGame;
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -48,6 +50,21 @@ const Sidebar = () => {
       <h1>Round: {round + 1}</h1>
       <h1>Score: {points}</h1>
       {round !== -1 && <h1>Find {generatedQuiz[round].name}</h1>}
+      {round !== -1 && <h1>capital: {generatedQuiz[round].capital}</h1>}
+      {round !== -1 && (
+        <img
+          style={{
+            width: "20rem",
+            height: "10rem",
+            marginBottom: "3rem",
+          }}
+          src={
+            require(`../assets/${currentMode}/${generatedQuiz[round].name}.svg`)
+              .default
+          }
+          alt="Flag"
+        />
+      )}
     </StyledSidebarContainer>
   );
 };
