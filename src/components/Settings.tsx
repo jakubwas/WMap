@@ -16,9 +16,9 @@ const Settings = () => {
         name="timer"
         value={timer}
         id="timer"
-        min={5}
+        min={1}
         max={30}
-        step={5}
+        step={1}
         onChange={(e: any) => {
           dispatch(setTimerAction(e.target.value));
         }}

@@ -7,6 +7,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../store";
 import { setStartGameAction } from "../store/actions";
 import Timer from "./Timer";
+import PlayButton from "./PlayButton";
 
 const StyledSidebarContainer = styled.div`
   width: 30rem;
@@ -27,7 +28,7 @@ const StyledSideNote = styled.h2`
 
 const Sidebar = () => {
   const currentGame = useSelector((state: RootState) => state.currentGame);
-  const { round, generatedQuiz, points, currentMode } = currentGame;
+  const { round, generatedQuiz, points, currentMode, isFinished } = currentGame;
   const dispatch = useDispatch();
 
   const startGameHandler = () => {
@@ -37,15 +38,22 @@ const Sidebar = () => {
   return (
     <StyledSidebarContainer>
       <StyledSideNote>{currentMode}</StyledSideNote>
-      <button type="submit" onClick={startGameHandler}>
-        Start
-      </button>
+      <PlayButton
+        onClick={startGameHandler}
+        backText={isFinished ? "Play Again" : "Play"}
+      >
+        {isFinished ? "Play Again" : "Play"}
+      </PlayButton>
       <Timer />
-      <h1>Round: {round + 1}</h1>
+      <h1>
+        Round: {round + 1} / {10}
+      </h1>
       <h1>Score: {points}</h1>
-      {round !== -1 && <h1>Find {generatedQuiz[round].name}</h1>}
-      {round !== -1 && <h1>capital: {generatedQuiz[round].capital}</h1>}
-      {round !== -1 && (
+      {round !== -1 && !isFinished && <h1>Find {generatedQuiz[round].name}</h1>}
+      {round !== -1 && !isFinished && (
+        <h1>capital: {generatedQuiz[round].capital}</h1>
+      )}
+      {round !== -1 && !isFinished && (
         <img
           style={{
             width: "20rem",

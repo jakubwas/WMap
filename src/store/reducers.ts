@@ -21,6 +21,7 @@ export const settings = (state = settingsInitState, action: any) => {
 const currentGameInitState = {
   currentMode: null,
   isActive: false,
+  isFinished: false,
   generatedQuiz: null,
   round: -1,
   points: 0,
@@ -42,6 +43,7 @@ export const currentGame = (state = currentGameInitState, action: any) => {
         return {
           ...state,
           isActive: false,
+          isFinished: true,
         };
       }
       return {
@@ -54,6 +56,7 @@ export const currentGame = (state = currentGameInitState, action: any) => {
         isActive: true,
         round: 0,
         points: 0,
+        isFinished: false,
       };
     case types.SET_PAUSE:
       return {
