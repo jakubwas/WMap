@@ -15,19 +15,21 @@ const Timer = () => {
   const dispatch = useDispatch();
 
   const currentGame = useSelector((state: RootState) => state.currentGame);
+  const settings = useSelector((state: RootState) => state.settings);
   const { isActive, round } = currentGame;
+  const { timer } = settings;
 
-  const [seconds, setSeconds] = useState(15);
+  const [seconds, setSeconds] = useState(timer);
 
   useEffect(() => {
     if (isActive) {
       let x = 0;
-      setSeconds(15);
+      setSeconds(timer);
       const interval = setInterval(() => {
-        setSeconds((seconds) => seconds - 1);
-        if (++x === 15) {
+        setSeconds((seconds: number) => seconds - 1);
+        if (++x === +timer) {
           window.clearInterval(interval);
-          setSeconds(15);
+          setSeconds(timer);
           dispatch(setCurrentRoundAction());
         }
       }, 1000);
