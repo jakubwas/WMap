@@ -1,12 +1,11 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable global-require */
 /* eslint-disable import/no-dynamic-require */
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../store";
-import { generateQuiz } from "../utils/generateQuiz";
-import { setGeneratedQuizAction, setStartGameAction } from "../store/actions";
+import { setStartGameAction } from "../store/actions";
 import Timer from "./Timer";
 
 const StyledSidebarContainer = styled.div`
@@ -30,11 +29,6 @@ const Sidebar = () => {
   const currentGame = useSelector((state: RootState) => state.currentGame);
   const { round, generatedQuiz, points, currentMode } = currentGame;
   const dispatch = useDispatch();
-
-  useEffect(() => {
-    const quiz = generateQuiz(currentMode);
-    dispatch(setGeneratedQuizAction(quiz));
-  }, [currentMode, dispatch]);
 
   const startGameHandler = () => {
     dispatch(setStartGameAction());

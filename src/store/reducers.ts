@@ -53,6 +53,7 @@ export const currentGame = (state = currentGameInitState, action: any) => {
         ...state,
         isActive: true,
         round: 0,
+        points: 0,
       };
     case types.SET_PAUSE:
       return {
@@ -68,6 +69,14 @@ export const currentGame = (state = currentGameInitState, action: any) => {
       return {
         ...state,
         points: state.points + 1,
+      };
+    case types.SET_RESET_GAME:
+      return {
+        ...state,
+        isActive: false,
+        points: 0,
+        round: -1,
+        generatedQuiz: null,
       };
 
     default:

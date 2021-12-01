@@ -35,3 +35,7 @@ export const setTimerAction = (timer: number) => ({
   type: types.SET_TIMER,
   payload: timer,
 });
+
+export const setResetGameAction = () => ({
+  type: types.SET_RESET_GAME,
+});
