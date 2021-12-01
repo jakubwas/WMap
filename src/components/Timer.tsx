@@ -7,8 +7,8 @@ import styled from "styled-components";
 import { RootState } from "../store";
 import { setCurrentRoundAction } from "../store/actions";
 
-const StyledSecondsHeader = styled.div`
-  font-size: 25px;
+const StyledSecondsHeader = styled.h1`
+  font-size: 30px;
 `;
 
 const Timer = () => {
@@ -38,7 +38,7 @@ const Timer = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isActive, round]);
 
-  return <StyledSecondsHeader>{seconds}</StyledSecondsHeader>;
+  return <StyledSecondsHeader>Time: {seconds}</StyledSecondsHeader>;
 };
 
 export default Timer;

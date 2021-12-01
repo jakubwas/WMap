@@ -25,6 +25,17 @@ const StyledSideNote = styled.h2`
   padding-right: 1rem;
   border-bottom: 0.3rem solid black;
 `;
+const StyledLabel1 = styled.h1`
+  font-size: 25px;
+`;
+const StyledLabel2 = styled.h2`
+  font-size: 20px;
+  text-align: center;
+`;
+const StyledLabel3 = styled.h2`
+  font-size: 15px;
+  text-align: center;
+`;
 
 const Sidebar = () => {
   const currentGame = useSelector((state: RootState) => state.currentGame);
@@ -44,21 +55,18 @@ const Sidebar = () => {
       >
         {isFinished ? "Play Again" : "Play"}
       </PlayButton>
-      <Timer />
-      <h1>
-        Round: {round + 1} / {10}
-      </h1>
-      <h1>Score: {points}</h1>
-      {round !== -1 && !isFinished && <h1>Find {generatedQuiz[round].name}</h1>}
       {round !== -1 && !isFinished && (
-        <h1>capital: {generatedQuiz[round].capital}</h1>
+        <StyledLabel2>{generatedQuiz[round].name}</StyledLabel2>
+      )}
+      {round !== -1 && !isFinished && (
+        <StyledLabel3> {generatedQuiz[round].capital}</StyledLabel3>
       )}
       {round !== -1 && !isFinished && (
         <img
           style={{
-            width: "20rem",
-            height: "10rem",
-            marginBottom: "3rem",
+            width: "100%",
+            height: "150px",
+            margin: "1.5rem 0 3rem 0",
           }}
           src={
             require(`../assets/${currentMode}/${generatedQuiz[round].name}.svg`)
@@ -67,6 +75,11 @@ const Sidebar = () => {
           alt="Flag"
         />
       )}
+      <Timer />
+      <StyledLabel1>
+        Round: {round + 1} / {10}
+      </StyledLabel1>
+      <StyledLabel1>Score: {points}</StyledLabel1>
     </StyledSidebarContainer>
   );
 };
