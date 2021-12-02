@@ -9,6 +9,7 @@ const StyledMainContainer = styled.div`
   text-align: center;
   width: 100%;
   margin: 0 auto;
+  background-color: #fcfcfc;
 
   .effect {
     display: inline-flex;
@@ -58,10 +59,9 @@ const StyledButtonContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: #fff;
-  padding: 4rem 0rem;
+  background-color: #fcfcfc;
+  margin: 4rem 0rem;
   width: 24rem;
-  background: rgb(237, 237, 237);
 `;
 const StyledBtn = styled.div`
   letter-spacing: 0.1rem;

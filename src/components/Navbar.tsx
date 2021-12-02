@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { device } from "../styles";
 
 export const StyledNavigationBar = styled.nav`
-  background: rgb(0, 31, 63);
+  background: #1e2022;
   height: 7vh;
   min-height: 4rem;
   display: flex;

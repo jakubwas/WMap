@@ -10,6 +10,7 @@ import {
   setPointsAction,
   setCurrentRoundAction,
 } from "../store/actions";
+import Timer from "./Timer";
 
 const StyledMapContainer = styled.div<{ isActive: boolean }>`
   height: 100%;
@@ -43,6 +44,7 @@ const Map = () => {
 
   return (
     <StyledMapContainer isActive={isActive}>
+      <Timer />
       <EuropeMapSVG onClickHandler={mapClickHandler} />
     </StyledMapContainer>
   );

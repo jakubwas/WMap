@@ -9,6 +9,9 @@ import { setCurrentRoundAction } from "../store/actions";
 
 const StyledSecondsHeader = styled.h1`
   font-size: 30px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 `;
 
 const Timer = () => {

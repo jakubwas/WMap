@@ -6,13 +6,16 @@ import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../store";
 import { setStartGameAction } from "../store/actions";
-import Timer from "./Timer";
 import PlayButton from "./PlayButton";
 
 const StyledSidebarContainer = styled.div`
   width: 30rem;
   height: 100%;
-  background: rgb(237, 237, 237);
+  background: #fcfcfc;
+  position: relative;
+  -webkit-box-shadow: 23px -2px 49px -24px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 23px -2px 49px -24px rgba(66, 68, 90, 1);
+  box-shadow: 23px -2px 49px -24px rgba(66, 68, 90, 1);
 `;
 const StyledSideNote = styled.h2`
   margin-top: 3rem;
@@ -26,10 +29,11 @@ const StyledSideNote = styled.h2`
   border-bottom: 0.3rem solid black;
 `;
 const StyledLabel1 = styled.h1`
-  font-size: 25px;
+  font-size: 18px;
+  text-align: center;
 `;
 const StyledLabel2 = styled.h2`
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
 `;
 const StyledLabel3 = styled.h2`
@@ -55,27 +59,28 @@ const Sidebar = () => {
       >
         {isFinished ? "Play Again" : "Play"}
       </PlayButton>
-      {round !== -1 && !isFinished && (
-        <StyledLabel2>{generatedQuiz[round].name}</StyledLabel2>
-      )}
-      {round !== -1 && !isFinished && (
-        <StyledLabel3> {generatedQuiz[round].capital}</StyledLabel3>
-      )}
-      {round !== -1 && !isFinished && (
-        <img
-          style={{
-            width: "100%",
-            height: "150px",
-            margin: "1.5rem 0 3rem 0",
-          }}
-          src={
-            require(`../assets/${currentMode}/${generatedQuiz[round].name}.svg`)
-              .default
-          }
-          alt="Flag"
-        />
-      )}
-      <Timer />
+      <div style={{ height: "35%" }}>
+        {round !== -1 && !isFinished && (
+          <StyledLabel2>{generatedQuiz[round].name}</StyledLabel2>
+        )}
+        {round !== -1 && !isFinished && (
+          <StyledLabel3> {generatedQuiz[round].capital}</StyledLabel3>
+        )}
+        {round !== -1 && !isFinished && (
+          <img
+            style={{
+              width: "100%",
+              height: "150px",
+              margin: "1.5rem 0 3rem 0",
+            }}
+            src={
+              require(`../assets/${currentMode}/${generatedQuiz[round].name}.svg`)
+                .default
+            }
+            alt="Flag"
+          />
+        )}
+      </div>
       <StyledLabel1>
         Round: {round + 1} / {10}
       </StyledLabel1>
