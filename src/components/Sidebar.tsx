@@ -9,7 +9,7 @@ import { setStartGameAction } from "../store/actions";
 import PlayButton from "./PlayButton";
 
 const StyledSidebarContainer = styled.div`
-  width: 30rem;
+  width: 25rem;
   height: 100%;
   background: #fcfcfc;
   position: relative;
@@ -70,7 +70,6 @@ const Sidebar = () => {
           <img
             style={{
               width: "100%",
-              height: "150px",
               margin: "1.5rem 0 3rem 0",
             }}
             src={

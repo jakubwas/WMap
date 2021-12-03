@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="600" height="400" viewBox="0 0 27 18" xmlns="http://www.w3.org/2000/svg">
-  <desc>Flag of Greece</desc>
-  <rect width="27" height="18" fill="#0d5eaf"/>
-  <path fill="none" stroke-width="2" stroke="white" d="M5,0V11 M0,5H10 M10,3H27 M10,7H27 M0,11H27 M0,15H27"/>
+<svg width="900" height="600" viewBox="0 0 900 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M900 0H0V600H900V0Z" fill="#0D5EAF"/>
+<path d="M0 500H900M166.667 0V366.667V0ZM0 166.667H333.333H0ZM333.333 100H900H333.333ZM333.333 233.333H900H333.333ZM0 366.667H900H0Z" stroke="white" stroke-width="44.4444"/>
 </svg>
