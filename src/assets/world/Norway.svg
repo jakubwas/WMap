@@ -1,7 +1,9 @@
-<svg width="900" height="600" viewBox="0 0 900 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M900 0H0V600H900V0Z" fill="#EF2B2D"/>
-<path d="M409.091 0H245.455V600H409.091V0Z" fill="white"/>
-<path d="M900 225H0V375H900V225Z" fill="white"/>
-<path d="M368.182 0H286.364V600H368.182V0Z" fill="#002868"/>
-<path d="M900 262.5H0V337.5H900V262.5Z" fill="#002868"/>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1100" height="800">
+ <rect width="1100" height="800" fill="#ef2b2d"/>
+ <rect width="200" height="800" x="300" fill="#fff"/>
+ <rect width="1100" height="200" y="300" fill="#fff"/>
+ <rect width="100" height="800" x="350" fill="#002868"/>
+ <rect width="1100" height="100" y="350" fill="#002868"/>
 </svg>
