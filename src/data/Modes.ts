@@ -3,18 +3,8 @@ export const modes = [
   { name: "Countries", to: "/" },
 ];
 export const countries = [
-  { name: "North America", to: "/map/northamerica" },
-  { name: "South America", to: "/map/southamerica" },
+  { name: "World", to: "/map/world" },
   { name: "Europe", to: "/map/europe" },
-  { name: "Africa", to: "/map/africa" },
-  { name: "Asia", to: "/map/asia" },
 ];
 
-export const MODES = [
-  "usa",
-  "northamerica",
-  "southamerica",
-  "europe",
-  "africa",
-  "asia",
-];
+export const MODES = ["usa", "world", "europe"];

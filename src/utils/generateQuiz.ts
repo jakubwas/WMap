@@ -1,4 +1,5 @@
 import { EuropeData } from "../data/EuropeData";
+import { WorldData } from "../data/WorldData";
 
 // eslint-disable-next-line consistent-return
 export const generateQuiz = (mode: string) => {
@@ -8,6 +9,9 @@ export const generateQuiz = (mode: string) => {
   switch (mode) {
     case "europe":
       modeData = EuropeData;
+      break;
+    case "world":
+      modeData = WorldData;
       break;
     default:
       return null;

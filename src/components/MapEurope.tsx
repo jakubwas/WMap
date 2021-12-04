@@ -30,7 +30,7 @@ const MapEurope = (props: ComponentProps) => (
           <Geography
             key={geo.rsmKey}
             geography={geo}
-            fill="#9998A3"
+            fill="#00ADB5"
             stroke="#EAEAEC"
             id={geo.properties.NAME}
             onClick={(e: any) => {

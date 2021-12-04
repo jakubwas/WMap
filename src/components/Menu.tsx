@@ -20,7 +20,7 @@ const StyledMenuList = styled.div<{ mode: string }>`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: ${(props) => (props.mode === "countries" ? "80%" : "50%")};
+  width: 50%;
   margin: 2rem 0;
   flex-wrap: wrap;
 `;

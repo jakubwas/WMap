@@ -66,7 +66,7 @@ const Sidebar = () => {
         {round !== -1 && !isFinished && (
           <StyledLabel3> {generatedQuiz[round].capital}</StyledLabel3>
         )}
-        {round !== -1 && !isFinished && (
+        {/* {round !== -1 && !isFinished && (
           <img
             style={{
               width: "100%",
@@ -78,7 +78,7 @@ const Sidebar = () => {
             }
             alt="Flag"
           />
-        )}
+        )} */}
       </div>
       <StyledLabel1>
         Round: {round + 1} / {10}

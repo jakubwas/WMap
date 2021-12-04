@@ -11,6 +11,7 @@ import {
   setCurrentRoundAction,
 } from "../store/actions";
 import Timer from "./Timer";
+import MapWorld from "./MapWorld";
 
 const StyledMapContainer = styled.div<{ isActive: boolean }>`
   height: 100%;
@@ -20,12 +21,11 @@ const StyledMapContainer = styled.div<{ isActive: boolean }>`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  pointer-events: ${(props) => (props.isActive ? "all" : "none")};
 `;
 
 const Map = () => {
   const currentGame = useSelector((state: RootState) => state.currentGame);
-  const { isActive, round, generatedQuiz } = currentGame;
+  const { currentMode, isActive, round, generatedQuiz } = currentGame;
 
   const dispatch = useDispatch();
 
@@ -45,7 +45,10 @@ const Map = () => {
   return (
     <StyledMapContainer isActive={isActive}>
       <Timer />
-      <MemoizedMapEurope onClickHandler={mapClickHandler} />
+      {currentMode === "world" && <MapWorld onClickHandler={mapClickHandler} />}
+      {currentMode === "europe" && (
+        <MemoizedMapEurope onClickHandler={mapClickHandler} />
+      )}
     </StyledMapContainer>
   );
 };
