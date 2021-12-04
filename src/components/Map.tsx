@@ -3,7 +3,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import styled from "styled-components";
 import { RootState } from "../store";
-import EuropeMapSVG from "./EuropeMapSVG";
+import { MemoizedMapEurope } from "./MapEurope";
 import {
   setPauseAction,
   setResumeAction,
@@ -29,9 +29,9 @@ const Map = () => {
 
   const dispatch = useDispatch();
 
-  const mapClickHandler = (e: any) => {
+  const mapClickHandler = (id: string) => {
     dispatch(setPauseAction());
-    if (e.target.id === generatedQuiz[round].name) {
+    if (id === generatedQuiz[round].name) {
       dispatch(setPointsAction());
     }
     setTimeout(() => {
@@ -45,7 +45,7 @@ const Map = () => {
   return (
     <StyledMapContainer isActive={isActive}>
       <Timer />
-      <EuropeMapSVG onClickHandler={mapClickHandler} />
+      <MemoizedMapEurope onClickHandler={mapClickHandler} />
     </StyledMapContainer>
   );
 };
