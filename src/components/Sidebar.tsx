@@ -59,17 +59,25 @@ const Sidebar = () => {
       >
         {isFinished ? "Play Again" : "Play"}
       </PlayButton>
-      <div style={{ height: "35%" }}>
+      <div
+        style={{
+          height: "35%",
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
         {round !== -1 && !isFinished && (
           <StyledLabel2>{generatedQuiz[round].name}</StyledLabel2>
         )}
         {round !== -1 && !isFinished && (
           <StyledLabel3> {generatedQuiz[round].capital}</StyledLabel3>
         )}
-        {/* {round !== -1 && !isFinished && (
+        {round !== -1 && !isFinished && (
           <img
             style={{
-              width: "100%",
+              width: "80%",
               margin: "1.5rem 0 3rem 0",
             }}
             src={
@@ -78,7 +86,7 @@ const Sidebar = () => {
             }
             alt="Flag"
           />
-        )} */}
+        )}
       </div>
       <StyledLabel1>
         Round: {round + 1} / {10}

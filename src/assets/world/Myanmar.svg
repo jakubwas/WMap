@@ -1,8 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1800" height="1200" viewBox="0 0 18 12">
-<rect width="18" height="6" fill="#FECB00"/>
-<rect width="18" height="6" y="6" fill="#EA2839"/>
-<rect width="18" height="4" y="4" fill="#34B233"/>
-<g transform="translate(9,6.422)scale(4.422)">
-<polygon id="pt" points="-0.3249196962329062,0 0,-1 0.3249196962329062,0" fill="#FFF"/>
-<use xlink:href="#pt" transform="rotate(-144)"/><use xlink:href="#pt" transform="rotate(-72)"/><use xlink:href="#pt" transform="rotate(72)"/><use xlink:href="#pt" transform="rotate(144)"/></g>
-</svg>
+<svg id="Layer_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m496.077 345.043c10.291-27.732 15.923-57.729 15.923-89.043s-5.632-61.311-15.923-89.043l-240.077-22.261-240.077 22.261c-10.29 27.732-15.923 57.729-15.923 89.043s5.633 61.311 15.923 89.043l240.077 22.261z" fill="#6da544"/><path d="m496.077 166.957c-36.171-97.485-130.006-166.957-240.077-166.957s-203.906 69.472-240.077 166.957z" fill="#ffda44"/><path d="m256 512c110.071 0 203.906-69.472 240.077-166.957h-480.154c36.171 97.485 130.006 166.957 240.077 166.957z" fill="#d80027"/><path d="m431.549 216.586h-134.107l-41.442-127.543-41.442 127.543h-134.107l108.495 78.826-41.442 127.545 108.496-77.914 108.496 77.913-41.441-127.545z" fill="#f0f0f0"/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></svg>

@@ -1,8 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-var-requires */
 import { WorldData } from "../data/WorldData";
+
 const fs = require("fs");
 
 describe("Flags", () => {
-  const path = "";
   const fileExistsSync = (file: string) => {
     try {
       fs.accessSync(file);

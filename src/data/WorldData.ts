@@ -155,6 +155,7 @@ export const WorldData = [
     name: "Czech Republic",
     capital: "Prague",
   },
+  //
   {
     capital: "Algiers",
     name: "Algeria",
@@ -229,7 +230,7 @@ export const WorldData = [
   },
   {
     capital: "Bissau",
-    name: "Guinea-Bissau",
+    name: "Guinea Bissau",
   },
   {
     capital: "Nairobi",
@@ -332,10 +333,6 @@ export const WorldData = [
     name: "Uganda",
   },
   {
-    capital: "El Aaiún",
-    name: "Western Sahara",
-  },
-  {
     capital: "Lusaka",
     name: "Zambia",
   },
@@ -421,7 +418,7 @@ export const WorldData = [
   },
   {
     capital: "Vientiane",
-    name: "Lao PDR",
+    name: "Laos",
   },
   {
     capital: "Beirut",
@@ -501,7 +498,7 @@ export const WorldData = [
   },
   {
     capital: "Dili",
-    name: "Timor-Leste",
+    name: "Timor Leste",
   },
   {
     capital: "Ankara",
@@ -583,7 +580,6 @@ export const WorldData = [
     capital: "Panama City",
     name: "Panama",
   },
-
   {
     capital: "Washington, D.C.",
     name: "United States",
@@ -615,10 +611,6 @@ export const WorldData = [
   {
     capital: "Quito",
     name: "Ecuador",
-  },
-  {
-    capital: "Cayenne",
-    name: "French Guiana",
   },
   {
     capital: "Georgetown",

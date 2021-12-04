@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="600">
-	<rect width="300" height="600" fill="#00853f"/>
-	<rect x="300" width="300" height="600" fill="#fdef42"/>
-	<rect x="600" width="300" height="600" fill="#e31b23"/>
-	<g transform="translate(450,300)" fill="#00853f">
-		<g id="c">
-			<path id="t" d="M 0,-100 v 100 h 50 z" transform="rotate(18 0,-100)"/>
-			<use xlink:href="#t" transform="scale(-1,1)"/>
-		</g>
-		<use xlink:href="#c" transform="rotate(72)"/>
-		<use xlink:href="#c" transform="rotate(144)"/>
-		<use xlink:href="#c" transform="rotate(216)"/>
-		<use xlink:href="#c" transform="rotate(288)"/>
-	</g>
-</svg>
+<svg id="Layer_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m367.304 25.402c-33.656-16.274-71.414-25.402-111.304-25.402s-77.648 9.128-111.304 25.402l-22.261 230.598 22.261 230.598c33.656 16.274 71.414 25.402 111.304 25.402s77.648-9.128 111.304-25.402l22.261-230.598z" fill="#ffda44"/><g fill="#496e2d"><path d="m255.998 166.957 22.1 68.02h71.528l-57.864 42.043 22.101 68.023-57.865-42.04-57.865 42.04 22.105-68.023-57.864-42.043h71.523z"/><path d="m144.696 25.411c-85.63 41.407-144.696 129.096-144.696 230.589s59.066 189.182 144.696 230.589z"/></g><path d="m367.304 25.411v461.178c85.63-41.407 144.696-129.096 144.696-230.589s-59.066-189.182-144.696-230.589z" fill="#d80027"/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></svg>
