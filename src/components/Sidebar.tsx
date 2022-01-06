@@ -80,10 +80,8 @@ const Sidebar = () => {
               width: "80%",
               margin: "1.5rem 0 3rem 0",
             }}
-            src={
-              require(`../assets/${currentMode}/${generatedQuiz[round].name}.svg`)
-                .default
-            }
+            src={require(`../assets/${currentMode}/${generatedQuiz[round].name}.svg`)}
+            className={`../assets/${currentMode}/${generatedQuiz[round].name}.svg`}
             alt="Flag"
           />
         )}

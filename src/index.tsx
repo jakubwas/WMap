@@ -6,7 +6,6 @@ import { persistStore } from "redux-persist";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import App from "./App";
-import reportWebVitals from "./reportWebVitals";
 import configureStore from "./store";
 
 const store = configureStore();
@@ -20,7 +19,5 @@ ReactDOM.render(
       </PersistGate>
     </Provider>
   </React.StrictMode>,
-  document.getElementById("root"),
+  document.getElementById("root")
 );
-
-reportWebVitals();
